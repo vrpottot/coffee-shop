@@ -1,6 +1,6 @@
 .Qroot {
   box-sizing: border-box;
-  width: 1309px;
+  max-width: 1309px;
   border-radius: var(--radius-20);
   background: var(--color-primary-100);
   cursor: pointer;

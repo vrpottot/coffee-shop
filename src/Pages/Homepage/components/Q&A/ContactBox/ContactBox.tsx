@@ -1,4 +1,4 @@
-import './ConactBox.css'
+import './ContactBox.css'
 export const ContactBox = ({ title, description, onClick, className }: { title: string; description: string; onClick: () => void; className?: string }  ) => {
   return (
     <div className="ContactRoot">

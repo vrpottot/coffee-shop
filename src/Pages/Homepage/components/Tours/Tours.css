@@ -9,6 +9,7 @@
   box-shadow: var(--shadow-small);
   margin: 20px 52px 0 52px;
   overflow: hidden;
+  margin-top: 20px;
   width: auto;
   max-width: 1776px;
 }
