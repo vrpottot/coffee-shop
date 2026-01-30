@@ -52,7 +52,7 @@ export const QuestionAndAnswers = ({
         </div>
 
       
-          <div className="contactBoxContainer">
+          <div>
             <ContactBox
               className="contactBox"
               onClick={() => {}}
