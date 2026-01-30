@@ -1,0 +1,99 @@
+/* Main container - relative positioning */
+.biketour-root {
+  position: relative;
+  width: var(--gap-260);
+  height: var(--gap-260);
+}
+
+/* Background container with white bg and rounded corners */
+.biketour-container {
+  position: absolute;
+  background-color: var(--color-white);
+  inset: 0;
+  overflow: hidden;
+  border-radius: var(--radius-16);
+}
+
+.biketour-container:hover {
+  border: 1.5px solid var(--color-opacity-dark-70);
+}
+
+.biketour-container:active {
+  border: none;
+  box-shadow: var(--shadow-pressed);
+}
+
+/* Background */
+.biketour-background {
+  position: absolute;
+  left: 0;
+  width: 258px;
+  height: 258px;
+  top: 117px;
+}
+
+/* Title text */
+.biketour-title {
+  position: absolute;
+  font-family: var(--font-family-base);
+  font-weight: var(--font-weight-semibold);
+  font-size: var(--font-size-5xl);
+  line-height: var(--line-height-none);
+  left: calc(50% - 58px);
+  color: var(--color-neutral-300);
+  top: var(--gap-24);
+  margin: 0;
+  white-space: nowrap;
+}
+
+/* Character 2 wrapper */
+.biketour-character2-wrapper {
+  position: absolute;
+  inset: 42.31% 41.54% 3.85% 10.38%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.biketour-character2-rotated {
+  flex: none;
+  height: 140px;
+  width: 125px;
+  transform: rotate(180deg) scaleY(-1);
+}
+
+.biketour-character2 {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+/* Character 1 wrapper */
+.biketour-character1-wrapper {
+  position: absolute;
+  inset: 42.31% -13.85% 4.23% 64.62%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.biketour-character1-rotated {
+  flex: none;
+  height: 139px;
+  width: 128px;
+  transform: rotate(180deg) scaleY(-1);
+}
+
+.biketour-character1 {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+/* Common image styles */
+.biketour-image {
+  display: block;
+  max-width: none;
+  width: 100%;
+  height: 100%;
+}

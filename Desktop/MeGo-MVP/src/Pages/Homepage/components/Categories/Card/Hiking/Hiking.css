@@ -1,0 +1,126 @@
+/* Main container - relative positioning */
+.hiking-root {
+  position: relative;
+  width: var(--gap-260);
+  height: var(--gap-260);
+}
+
+/* Background container with white bg and rounded corners */
+.hiking-container {
+  position: absolute;
+  background-color: var(--color-white);
+  inset: 0;
+  overflow: hidden;
+  border-radius: var(--radius-16);
+}
+
+.hiking-container:hover {
+  border: 1.5px solid var(--color-opacity-dark-70);
+}
+
+.hiking-container:active {
+  border: none;
+  box-shadow: var(--shadow-pressed);
+}
+
+/* Mountains wrapper - positioned using percentages */
+.hiking-mountains-wrapper {
+  position: absolute;
+  inset: 41.54% -28.62% -5.78% -17.69%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hiking-mountains-rotated {
+  flex: none;
+  height: 167.024px;
+  width: 380.413px;
+  transform: rotate(180deg) scaleY(-1);
+}
+
+.hiking-mountains {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+/* Rock wrapper */
+.hiking-rock-wrapper {
+  position: absolute;
+  inset: 85.16% 0 -3.46% 60%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hiking-rock-rotated {
+  flex: none;
+  height: 47.588px;
+  width: 104.002px;
+  transform: rotate(180deg) scaleY(-1);
+}
+
+.hiking-rock {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+/* Character wrapper */
+.hiking-character-wrapper {
+  position: absolute;
+  inset: 31.15% 12.54% 12.86% 67.11%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hiking-character-rotated {
+  flex: none;
+  height: 145.564px;
+  width: 52.901px;
+  transform: rotate(180deg) scaleY(-1);
+}
+
+.hiking-character {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.hiking-character-inner {
+  position: absolute;
+  inset: -0.34% -0.94% -0.34% -0.95%;
+}
+
+/* Title text */
+.hiking-title {
+  position: absolute;
+  font-family: var(--font-family-base);
+  font-weight: var(--font-weight-semibold);
+  font-size: var(--font-size-5xl);
+  line-height: var(--line-height-none);
+  left: calc(50% - 72px);
+  color: var(--color-neutral-300);
+  top: var(--gap-24);
+  margin: 0;
+  white-space: nowrap;
+}
+
+/* Decoration element - circular background */
+.hiking-decoration {
+  position: absolute;
+  left: 15px;
+  width: 151px;
+  height: 151px;
+  top: 138px;
+}
+
+/* Common image styles */
+.hiking-image {
+  display: block;
+  max-width: none;
+  width: 100%;
+  height: 100%;
+}
