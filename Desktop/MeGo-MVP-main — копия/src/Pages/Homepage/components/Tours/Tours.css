@@ -1,0 +1,226 @@
+.tours-section {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: var(--gap-24);
+  padding: var(--gap-24);
+  background: var(--color-secondary-300);
+  border-radius: var(--radius-24);
+  box-shadow: var(--shadow-small);
+  margin: 20px 52px 0 52px;
+  overflow: hidden;
+  width: auto;
+  max-width: 1776px;
+}
+
+.tours-header {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.tours-in-kz-title {
+  font-family: var(--font-family-base);
+  font-size: var(--font-size-6xl);
+  font-weight: var(--font-weight-semibold);
+  line-height: var(--line-height-100);
+  letter-spacing: var(--letter-spacing-none);
+  color: var(--color-black);
+  font-size: 32px;
+  font-weight: 600;
+  margin: 0;
+  padding-left: 5px;
+}
+
+.tours-carousel-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  width: 100%;
+  position: relative;
+}
+
+.tours-carousel-container {
+  flex: 1;
+  overflow-x: auto;
+  overflow-y: hidden;
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
+  width: 100%;
+  /* Hide scrollbar completely */
+  -ms-overflow-style: none !important;
+  scrollbar-width: none !important;
+  scrollbar-color: transparent transparent !important;
+}
+
+.tours-carousel-container::-webkit-scrollbar {
+  display: none !important;
+  width: 0 !important;
+  height: 0 !important;
+  background: transparent !important;
+  -webkit-appearance: none !important;
+}
+
+.tours-carousel-container::-webkit-scrollbar-track {
+  display: none !important;
+  background: transparent !important;
+  -webkit-appearance: none !important;
+}
+
+.tours-carousel-container::-webkit-scrollbar-thumb {
+  display: none !important;
+  background: transparent !important;
+  -webkit-appearance: none !important;
+}
+
+.tours-carousel-container::-webkit-scrollbar-corner {
+  display: none !important;
+  background: transparent !important;
+}
+
+.tours-carousel-items {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+
+.tours-carousel-item {
+  flex: 0 0 714px;
+  height: 400px;
+  display: flex;
+  align-items: center;
+  transition:
+    background-color 0.2s ease,
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.tours-carousel-item:hover {
+  transform: scale(1.01);
+}
+
+.tours-carousel-button {
+  width: 59px;
+  height: var(--gap-60);
+  border-radius: 37px;
+  background: var(--color-secondary-400);
+  border: none;
+  cursor: pointer;
+  font-size: var(--font-size-5xl);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+  flex-shrink: 0;
+  color: var(--color-neutral-200);
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 10;
+}
+
+.tours-carousel-button--next {
+  right: 0;
+}
+
+.tours-carousel-button--prev {
+  left: 0;
+}
+
+.tours-carousel-button:hover {
+  background: var(--color-secondary-500);
+  transform: translateY(-50%) scale(1.05);
+}
+
+.tours-carousel-button:active {
+  transform: translateY(-50%) scale(0.95);
+}
+
+@media (max-width: 1920px) {
+  .tours-section {
+    width: auto;
+  }
+
+  .tours-carousel-wrapper {
+    width: 100%;
+  }
+}
+
+@media (max-width: 1024px) {
+  .tours-section {
+    width: 100%;
+    gap: 16px;
+    padding: 20px;
+  }
+
+  .tours-in-kz-title {
+    font-size: 24px;
+  }
+
+  .tours-carousel-wrapper {
+    width: 100%;
+    gap: 10px;
+  }
+
+  .tours-carousel-item {
+    flex: 0 0 600px;
+    height: 320px;
+  }
+
+  .tours-carousel-button {
+    width: 50px;
+    height: 50px;
+    border-radius: 30px;
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 768px) {
+  .tours-section {
+    width: 100%;
+    gap: 12px;
+    padding: 16px;
+  }
+
+  .tours-in-kz-title {
+    font-size: 20px;
+  }
+
+  .tours-carousel-item {
+    flex: 0 0 450px;
+    height: 280px;
+  }
+
+  .tours-carousel-button {
+    width: 40px;
+    height: 40px;
+    border-radius: 25px;
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .tours-section {
+    width: 100%;
+    gap: 12px;
+    padding: 12px;
+    border-radius: 16px;
+  }
+
+  .tours-in-kz-title {
+    font-size: 18px;
+    padding-left: 3px;
+  }
+
+  .tours-carousel-item {
+    flex: 0 0 350px;
+    height: 240px;
+  }
+
+  .tours-carousel-button {
+    width: 35px;
+    height: 35px;
+    border-radius: 20px;
+    font-size: 14px;
+  }
+}

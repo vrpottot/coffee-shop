@@ -1,0 +1,84 @@
+.ContactRoot {
+  box-sizing: border-box;
+  width: 398px;
+  padding: var(--gap-24);
+  border-radius: 20px;
+  background: #EEEEFB;
+
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* title + description */
+.contactHeader {
+  display: flex;
+  flex-direction: column;
+  gap: var(--gap-4);
+}
+
+.contactTitle {
+  font: var(--typography-heading-3);
+  color: var(--color-neutral-300);
+}
+
+.contactDescription {
+  width: 333px;
+  font: var(--typography-body-small);
+  color: var(--color-neutral-300);
+}
+
+/* form */
+.contactForm {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.Qtextarea {
+  box-sizing: border-box;
+  width: 100%;
+  height: 170px;
+  padding: 20px;
+
+  border-radius: 10px;
+  border: 1px solid #111111;
+  background: var(--color-neutral-white);
+
+  resize: none;
+  outline: none;
+
+  font: var(--typography-body);
+  color: var(--color-neutral-300);
+}
+
+.Qtextarea::placeholder {
+  color: var(--color-neutral-200);
+}
+
+.Qtextarea:focus {
+  border-color: var(--color-neutral-300);
+}
+
+.buttonCon {
+  width: 100%;
+  padding: 13px 0;
+  border-radius: 10px;
+  background: #9B9AE6;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font: var(--typography-body);
+  color: #FAFAFA;
+  border: none;
+  cursor: pointer;
+  transition:
+    background-color 0.2s ease,
+    transform 0.15s ease,
+    box-shadow 0.15s ease;
+}
+
+.buttonCon:hover {
+  background: var(--color-primary-300);
+  transform: scale(1.03);
+}

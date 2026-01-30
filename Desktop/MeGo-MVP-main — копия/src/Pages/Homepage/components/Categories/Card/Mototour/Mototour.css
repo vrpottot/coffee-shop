@@ -1,0 +1,61 @@
+/* Main container - relative positioning */
+.mototour-root {
+  position: relative;
+  width: var(--gap-260);
+  height: var(--gap-260);
+}
+
+/* Background container with white bg and rounded corners */
+.mototour-container {
+  position: absolute;
+  background-color: var(--color-white);
+  inset: 0;
+  overflow: hidden;
+  border-radius: var(--radius-16);
+}
+
+.mototour-container:hover {
+  border: 1.5px solid var(--color-opacity-dark-70);
+}
+
+.mototour-container:active {
+  border: none;
+  box-shadow: var(--shadow-pressed);
+}
+
+/* Background circle */
+.mototour-background {
+  position: absolute;
+  left: 0;
+  width: var(--gap-260);
+  height: var(--gap-260);
+  top: 130px;
+}
+
+/* Title text */
+.mototour-title {
+  position: absolute;
+  font-family: var(--font-family-base);
+  font-weight: var(--font-weight-semibold);
+  font-size: var(--font-size-5xl);
+  line-height: var(--line-height-none);
+  left: calc(50% - 59px);
+  color: var(--color-neutral-300);
+  top: var(--gap-24);
+  margin: 0;
+  white-space: nowrap;
+}
+
+/* Character - motorcyclist */
+.mototour-character {
+  position: absolute;
+  inset: 28.85% 12.83% 11.92% 16.54%;
+}
+
+/* Common image styles */
+.mototour-image {
+  display: block;
+  max-width: none;
+  width: 100%;
+  height: 100%;
+}

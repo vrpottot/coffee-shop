@@ -1,0 +1,77 @@
+/* Main container - relative positioning */
+.fishing-root {
+  position: relative;
+  width: var(--gap-260);
+  height: var(--gap-260);
+}
+
+/* Background container with white bg and rounded corners */
+.fishing-container {
+  position: absolute;
+  background-color: var(--color-white);
+  inset: 0;
+  overflow: hidden;
+  border-radius: var(--radius-16);
+}
+
+.fishing-container:hover {
+  border: 1.5px solid var(--color-opacity-dark-70);
+}
+
+.fishing-container:active {
+  border: none;
+  box-shadow: var(--shadow-pressed);
+}
+
+/* Background circle */
+.fishing-background {
+  position: absolute;
+  left: 0;
+  width: var(--gap-260);
+  height: var(--gap-260);
+  top: 130px;
+}
+
+/* Title text */
+.fishing-title {
+  position: absolute;
+  font-family: var(--font-family-base);
+  font-weight: var(--font-weight-semibold);
+  font-size: var(--font-size-5xl);
+  line-height: var(--line-height-none);
+  left: calc(50% - 75px);
+  color: var(--color-neutral-300);
+  top: var(--gap-24);
+  margin: 0;
+  white-space: nowrap;
+}
+
+/* Character - fisherman */
+.fishing-character {
+  position: absolute;
+  inset: 41.54% 2.6% 0 3.46%;
+}
+
+.fishing-character-wrapper {
+  position: absolute;
+  inset: -0.33% -0.2%;
+}
+
+/* Fish */
+.fishing-fish {
+  position: absolute;
+  inset: 75.38% 3.84% 13.94% 90%;
+}
+
+.fishing-fish-wrapper {
+  position: absolute;
+  inset: -1.35% -2.35% -1.35% -2.34%;
+}
+
+/* Common image styles */
+.fishing-image {
+  display: block;
+  max-width: none;
+  width: 100%;
+  height: 100%;
+}

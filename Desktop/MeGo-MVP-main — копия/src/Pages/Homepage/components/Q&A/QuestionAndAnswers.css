@@ -1,0 +1,50 @@
+.QAroot {
+  width: 1777px;
+  margin: 0 auto;
+  padding: 24px;
+}
+
+.QAcontent {
+  display: flex;
+  gap: 24px;
+}
+
+.qa {
+  width: 1309px;
+}
+
+.QAlist {
+  width: 1309px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  margin-bottom: 16px;
+}
+
+.moreLink {
+  display: flex;
+  justify-content: flex-end;
+  font-family: 'Onest', sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 1.275;
+  color: var(--color-primary-300);
+  text-decoration: none;
+}
+
+.QAtitle {
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 1.275;
+  margin-bottom: 24px;
+  color: var(--color-neutral-300);
+}
+
+@media (max-width: 750px) {
+  .QAcontent{
+       display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+  }
+}

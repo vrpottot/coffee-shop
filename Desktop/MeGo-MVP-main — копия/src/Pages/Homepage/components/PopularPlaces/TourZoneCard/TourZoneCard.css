@@ -1,0 +1,68 @@
+.tour-zone-card {
+  background: #eeeefb;
+  border-radius: 12px;
+  padding: 6px;
+  overflow: hidden;
+  box-sizing: border-box;
+  width: 100%;
+}
+
+.tour-zone-card__content {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.tour-zone-card__icon-wrapper {
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+.tour-zone-card__icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 100px;
+  background: #a2845e;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.tour-zone-card__icon-img {
+  width: 24px;
+  height: 24px;
+  object-fit: contain;
+}
+
+.tour-zone-card__text {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  align-items: flex-start;
+  justify-content: center;
+  flex: 1;
+  color: rgba(0, 0, 0, 0.8);
+}
+
+.tour-zone-card__title {
+  font-family: 'Onest', sans-serif;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 1.275;
+  letter-spacing: 0;
+  margin: 0;
+  color: rgba(0, 0, 0, 0.8);
+}
+
+.tour-zone-card__price {
+  font-family: 'Onest', sans-serif;
+  font-size: 10px;
+  font-weight: 300;
+  line-height: 1.275;
+  letter-spacing: 0;
+  margin: 0;
+  color: rgba(0, 0, 0, 0.8);
+}
