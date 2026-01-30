@@ -1,0 +1,1 @@
+export { PopularPlace } from './PopularPlace';

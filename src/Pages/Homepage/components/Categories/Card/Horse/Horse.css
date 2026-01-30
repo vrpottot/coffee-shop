@@ -1,0 +1,70 @@
+/* Main container - relative positioning */
+.horse-root {
+  position: relative;
+  width: var(--gap-260);
+  height: var(--gap-260);
+}
+
+/* Background container with white bg and rounded corners */
+.horse-container {
+  position: absolute;
+  background-color: var(--color-white);
+  inset: 0;
+  overflow: hidden;
+  border-radius: var(--radius-16);
+}
+
+.horse-container:hover {
+  border: 1.5px solid var(--color-opacity-dark-70);
+}
+
+.horse-container:active {
+  border: none;
+  box-shadow: var(--shadow-pressed);
+}
+
+/* Background circle */
+.horse-background {
+  position: absolute;
+  left: 0;
+  width: var(--gap-260);
+  height: var(--gap-260);
+  top: 130px;
+}
+
+/* Path/ground */
+.horse-path {
+  position: absolute;
+  bottom: 7px;
+  height: 15px;
+  left: 26.54%;
+  right: 16.15%;
+}
+
+/* Title text */
+.horse-title {
+  position: absolute;
+  font-family: var(--font-family-base);
+  font-weight: var(--font-weight-semibold);
+  font-size: var(--font-size-5xl);
+  line-height: var(--line-height-none);
+  left: calc(50% - 45px);
+  color: var(--color-neutral-300);
+  top: var(--gap-24);
+  margin: 0;
+  white-space: nowrap;
+}
+
+/* Character - rider on horse */
+.horse-character {
+  position: absolute;
+  inset: 28.08% 18.85% 4.62% 19.23%;
+}
+
+/* Common image styles */
+.horse-image {
+  display: block;
+  max-width: none;
+  width: 100%;
+  height: 100%;
+}

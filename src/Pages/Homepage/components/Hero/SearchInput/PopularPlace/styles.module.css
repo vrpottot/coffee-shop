@@ -1,0 +1,42 @@
+.popularPlaceContainer {
+  display: flex;
+  width: 440px;
+  height: 385px;
+  padding-top: var(--gap-24);
+  flex-direction: column;
+  align-items: center;
+  gap: var(--gap-8);
+  border-radius: var(--radius-20);
+  background: linear-gradient(
+    180deg,
+    var(--color-neutral-white) 31.67%,
+    var(--color-primary-200) 137.72%
+  );
+
+  box-shadow: var(--shadow-small);
+  margin: auto;
+  overflow-y: auto;
+}
+
+.popularPlaceContainer::-webkit-scrollbar {
+  width: var(--gap-6);
+}
+
+.popularPlaceTitle {
+  align-self: stretch;
+  color: var(--color-neutral-300);
+  margin-left: var(--gap-24);
+
+  font-family: var(--text-secondary-font-family);
+  font-size: var(--text-secondary-font-size);
+  font-weight: var(--text-secondary-font-weight);
+  line-height: var(--text-secondary-line-height);
+}
+
+.popularPlaceCards {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--gap-8);
+  cursor: pointer;
+}

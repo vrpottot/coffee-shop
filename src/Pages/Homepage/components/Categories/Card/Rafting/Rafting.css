@@ -1,0 +1,88 @@
+/* Main container - relative positioning */
+.rafting-root {
+  position: relative;
+  width: var(--gap-260);
+  height: var(--gap-260);
+}
+
+/* Background container with white bg and rounded corners */
+.rafting-container {
+  position: absolute;
+  background-color: var(--color-white);
+  inset: 0;
+  overflow: hidden;
+  border-radius: var(--radius-16);
+}
+
+.rafting-container:hover {
+  border: 1.5px solid var(--color-opacity-dark-70);
+}
+
+.rafting-container:active {
+  border: none;
+  box-shadow: var(--shadow-pressed);
+}
+
+/* Title text */
+.rafting-title {
+  position: absolute;
+  font-family: var(--font-family-base);
+  font-weight: var(--font-weight-semibold);
+  font-size: var(--font-size-5xl);
+  line-height: var(--line-height-none);
+  left: calc(50% - 44px);
+  color: var(--color-neutral-300);
+  top: var(--gap-24);
+  margin: 0;
+  white-space: nowrap;
+}
+
+/* Background circle */
+.rafting-background {
+  position: absolute;
+  left: 0;
+  width: var(--gap-260);
+  height: var(--gap-260);
+  top: 130px;
+}
+
+/* Character wrapper */
+.rafting-character-wrapper {
+  position: absolute;
+  inset: 33.08% 12.01% 4.37% 19.23%;
+  display: contents;
+}
+
+.rafting-character-inner {
+  position: absolute;
+  display: flex;
+  inset: 33.08% 12.01% 4.37% 19.23%;
+  align-items: center;
+  justify-content: center;
+}
+
+.rafting-character-rotated {
+  flex: none;
+  height: 162.64px;
+  width: 178.777px;
+  transform: rotate(180deg) scaleY(-1);
+}
+
+.rafting-character {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.rafting-character-content {
+  position: absolute;
+  inset: -0.31% -0.28%;
+}
+
+/* Common image styles */
+.rafting-image {
+  display: block;
+  max-width: none;
+  width: 100%;
+  height: 100%;
+}

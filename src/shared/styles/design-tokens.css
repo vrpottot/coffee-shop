@@ -1,0 +1,312 @@
+:root {
+  /* -------- Primary -------- */
+  --color-primary-100: #EEEEFB;
+  --color-primary-200: #9B9AE6;
+  --color-primary-300: #5856D6;
+
+  /* -------- Secondary -------- */
+  --color-secondary-300: #F5F5F5;
+  --color-secondary-400: #F2F3F4;
+  --color-secondary-500: #F5F5FA;
+  
+  /* -------- Accent Colors -------- */
+  --color-accent-brown: #A2845E;
+  --color-accent-red: #FF2D55;
+  --color-accent-purple-light: #d4d4f4;
+  
+  /* -------- Opacity Colors -------- */
+  --color-opacity-dark-80: rgba(0, 0, 0, 0.80);
+  --color-opacity-dark-70: rgba(0, 0, 0, 0.70);
+  --color-opacity-dark-20: rgba(28, 28, 30, 0.2);
+  --color-opacity-white-10: rgba(255, 255, 255, 0.1);
+  --color-opacity-dark-80-alt: rgba(28, 28, 30, 0.8);
+
+  /* -------- Neutrals -------- */
+  --color-neutral-200: #8F8F8F;
+  --color-neutral-300: #111111;
+  --color-neutral-white: #FAFAFA;
+  --color-white: #FFFFFF;
+  --color-black: #000000;
+
+  /* -------- Semantic -------- */
+  --color-semantic-danger: #A62A2A;
+  --color-semantic-warning: #FFCC00;
+  --color-semantic-success: #34C759;
+
+  /* -------- Shadows -------- */
+  --shadow-big: 0 0 31.2px 0 rgba(0, 0, 0, 0.15); /* Big */
+  --shadow-small: 0 0 17.1px 0 rgba(0, 0, 0, 0.16); /* Small */
+  --shadow-pressed: 0 0 12px 0 var(--color-primary-300); /* Pressed */
+  --shadow-article: 0px 4px 15px 0px rgba(0, 0, 0, 0.1); /* Article card */
+  --shadow-header: 0px 4px 4px 0px rgba(0, 0, 0, 0.25); /* Header */
+
+  /* Spacing (Gaps) */
+  --gap-2: 2px;
+  --gap-3: 3px;
+  --gap-4: 4px;
+  --gap-5: 5px;
+  --gap-6: 6px;
+  --gap-8: 8px;
+  --gap-9: 9px;
+  --gap-10: 10px;
+  --gap-11: 11px;
+  --gap-12: 12px;
+  --gap-13: 13px;
+  --gap-14: 14px;
+  --gap-15: 15px;
+  --gap-16: 16px;
+  --gap-18: 18px;
+  --gap-20: 20px;
+  --gap-22: 22px;
+  --gap-24: 24px;
+  --gap-25: 25px;
+  --gap-26: 26px;
+  --gap-27: 27px;
+  --gap-28: 28px;
+  --gap-29: 29px;
+  --gap-30: 30px;
+  --gap-32: 32px;
+  --gap-33: 33px;
+  --gap-35: 3.5px; /* Specific padding value */
+  --gap-36: 36px;
+  --gap-40: 40px;
+  --gap-44: 44px;
+  --gap-45: 45px;
+  --gap-48: 48px;
+  --gap-49: 49px;
+  --gap-50: 50px;
+  --gap-52: 52px;
+  --gap-54: 54px;
+  --gap-56: 56px;
+  --gap-60: 60px;
+  --gap-63: 63px;
+  --gap-64: 64px;
+  --gap-66: 66px;
+  --gap-68: 68px;
+  --gap-72: 72px;
+  --gap-80: 80px;
+  --gap-84: 84px;
+  --gap-85: 85px;
+  --gap-100: 100px;
+  --gap-120: 120px;
+  --gap-138: 138px;
+  --gap-140: 140px;
+  --gap-141: 141px;
+  --gap-151: 151px;
+  --gap-153: 153px;
+  --gap-168: 168px;
+  --gap-182: 182px;
+  --gap-219: 219px;
+  --gap-242: 242px;
+  --gap-260: 260px;
+  --gap-272: 272px;
+  --gap-273: 273px;
+  --gap-277: 277px;
+  --gap-300: 300px;
+  --gap-308: 308px;
+  --gap-321: 321px;
+  --gap-324: 324px;
+  --gap-326: 326px;
+  --gap-333: 333px;
+  --gap-356: 356px;
+  --gap-360: 360px;
+  --gap-388: 388px;
+  --gap-392: 392px;
+  --gap-396: 396px;
+  --gap-413: 413px;
+  --gap-450: 450px;
+  --gap-576: 576px;
+  --gap-607: 607px;
+  --gap-1475: 1475px;
+
+  /* Breakpoints */
+  --breakpoint-mobile: 375px;
+  --breakpoint-tablet: 768px;
+  --breakpoint-desktop: 1024px;
+  --breakpoint-large: 1440px;
+  --breakpoint-xl: 1920px;
+
+  /* Border Radius */
+  --radius-12: 12px;
+  --radius-14: 14px;
+  --radius-16: 16px;
+  --radius-20: 20px;
+  --radius-24: 24px;
+  --radius-28: 28px;
+  --radius-30: 30px;
+  --radius-41: 41px;
+  --radius-50-percent: 50%;
+  --radius-64: 64px;
+  --radius-100: 100px;
+
+  /* =========================
+     Typography · Base
+  ========================= */
+
+  --font-family-base: 'Onest', system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+
+  /* Font Weights */
+  --font-weight-light: 300;
+  --font-weight-regular: 400;
+  --font-weight-medium: 500;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
+
+  /* Line Height */
+  --line-height-100: 1;
+
+  /* Letter Spacing */
+  --letter-spacing-none: 0;
+
+
+  /* =========================
+     Typography · Headings
+  ========================= */
+
+  /* Text / H1 */
+  --text-h1-font-family: var(--font-family-base);
+  --text-h1-font-size: 40px;
+  --text-h1-font-weight: var(--font-weight-bold);
+  --text-h1-line-height: var(--line-height-100);
+  --text-h1-letter-spacing: var(--letter-spacing-none);
+
+  /* Text / H2 */
+  --text-h2-font-family: var(--font-family-base);
+  --text-h2-font-size: 32px;
+  --text-h2-font-weight: var(--font-weight-semibold);
+  --text-h2-line-height: var(--line-height-100);
+  --text-h2-letter-spacing: var(--letter-spacing-none);
+
+  /* Text / Title */
+  --text-title-font-family: var(--font-family-base);
+  --text-title-font-size: 24px;
+  --text-title-font-weight: var(--font-weight-semibold);
+  --text-title-line-height: var(--line-height-100);
+  --text-title-letter-spacing: var(--letter-spacing-none);
+
+
+  /* =========================
+     Typography · Body
+  ========================= */
+
+  /* Text / Body */
+  --text-body-font-family: var(--font-family-base);
+  --text-body-font-size: 16px;
+  --text-body-font-weight: var(--font-weight-regular);
+  --text-body-line-height: var(--line-height-100);
+  --text-body-letter-spacing: var(--letter-spacing-none);
+
+  /* Text / Secondary */
+  --text-secondary-font-family: var(--font-family-base);
+  --text-secondary-font-size: 14px;
+  --text-secondary-font-weight: var(--font-weight-light);
+  --text-secondary-line-height: var(--line-height-100);
+  --text-secondary-letter-spacing: var(--letter-spacing-none);
+
+  /* Text / Caption */
+  --text-caption-font-family: var(--font-family-base);
+  --text-caption-font-size: 12px;
+  --text-caption-font-weight: var(--font-weight-medium);
+  --text-caption-line-height: var(--line-height-100);
+  --text-caption-letter-spacing: var(--letter-spacing-none);
+
+
+  /* =========================
+     Typography · Link
+  ========================= */
+
+  /* Text / Link */
+  --text-link-font-family: var(--font-family-base);
+  --text-link-font-size: 14px;
+  --text-link-font-weight: var(--font-weight-light);
+  --text-link-line-height: var(--line-height-100);
+  --text-link-letter-spacing: var(--letter-spacing-none);
+
+  --text-link-decoration-line: underline;
+  --text-link-decoration-style: solid;
+  --text-link-decoration-thickness: 0%;
+  --text-link-decoration-offset: 0%;
+
+  /* =========================
+    Typography Presets
+  ========================= */
+
+  /* -------------------------
+    Font Families
+  ------------------------- */
+  --font-family-heading: var(--font-family-base);
+  --font-family-body: var(--font-family-base);
+  --font-family-mono: 'Courier New', Courier, monospace;
+
+  /* -------------------------
+    Font Sizes
+  ------------------------- */
+  --font-size-xs: 10px;   /* Extra small */
+  --font-size-sm: 12px;   /* Caption */
+  --font-size-lg: 14px;   /* Secondary / Link */
+  --font-size-base: 16px; /* Body */
+  --font-size-xl-text: 18px; /* Extra large text */
+  --font-size-5xl: 24px;  /* Title */
+  --font-size-6xl: 32px;  /* H2 */
+  --font-size-7xl: 40px;  /* H1 */
+  
+  /* Icon Sizes */
+  --icon-size-sm: 18px;
+  --icon-size-md: 21px;
+  --icon-size-lg: 22px;
+  --icon-size-xl: 24px;
+  --icon-size-2xl: 50px;
+
+  /* -------------------------
+    Line Heights
+  ------------------------- */
+  --line-height-tight: 1;      /* For headings */
+  --line-height-normal: 1.2;   /* For body / UI text */
+  --line-height-relaxed: 1.5;  /* For long text */
+  --line-height-none: normal;  /* For specific cases */
+  --line-height-144: 14.4px;  /* Specific line height */
+  --line-height-168: 16.8px;  /* Specific line height */
+  --line-height-288: 28.8px;  /* Specific line height */
+
+  /* -------------------------
+    Headings
+  ------------------------- */
+  --typography-heading-1: var(--font-weight-bold) var(--font-size-7xl) / var(--line-height-tight) var(--font-family-heading);
+  --typography-heading-2: var(--font-weight-semibold) var(--font-size-6xl) / var(--line-height-tight) var(--font-family-heading);
+  --typography-heading-3: var(--font-weight-semibold) var(--font-size-5xl) / var(--line-height-tight) var(--font-family-heading);
+
+  /* -------------------------
+    Body Text
+  ------------------------- */
+  --typography-body: var(--font-weight-regular) var(--font-size-base) / var(--line-height-relaxed) var(--font-family-body);
+  --typography-body-small: var(--font-weight-light) var(--font-size-lg) / var(--line-height-relaxed) var(--font-family-body);
+  --typography-body-caption: var(--font-weight-medium) var(--font-size-sm) / var(--line-height-normal) var(--font-family-body);
+
+  /* -------------------------
+    Links
+  ------------------------- */
+  --typography-link: var(--font-weight-light) var(--font-size-lg) / var(--line-height-normal) var(--font-family-body);
+  --typography-link-decoration-line: underline;
+  --typography-link-decoration-style: solid;
+  --typography-link-decoration-thickness: 0%;
+  --typography-link-decoration-offset: 0%;
+
+  /* -------------------------
+    UI / Labels
+  ------------------------- */
+  --typography-label-large: var(--font-weight-semibold) var(--font-size-base) / var(--line-height-normal) var(--font-family-body);
+  --typography-label: var(--font-weight-medium) var(--font-size-sm) / var(--line-height-normal) var(--font-family-body);
+  --typography-label-small: var(--font-weight-medium) var(--font-size-sm) / var(--line-height-normal) var(--font-family-body);
+
+  /* -------------------------
+    Special / Misc
+  ------------------------- */
+  --typography-lead: var(--font-weight-regular) var(--font-size-5xl) / var(--line-height-relaxed) var(--font-family-body);
+  --typography-quote: var(--font-weight-light) var(--font-size-6xl) / var(--line-height-relaxed) var(--font-family-body);
+  
+  /* Legacy / Compatibility */
+  --font-onest: var(--font-family-base);
+  --black-300: var(--color-neutral-300);
+  --indigo-200: var(--color-primary-200);
+  --indigo-300: var(--color-primary-300);
+}
