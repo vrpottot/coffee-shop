@@ -51,14 +51,16 @@ export const QuestionAndAnswers = ({
           </a>
         </div>
 
-        <div>
-          <ContactBox
-            className="contactBox"
-            onClick={() => {}}
-            title="Остались вопросы?"
-            description="Напишите нам. Мы ответим в течение 10 минут."
-          />
-        </div>
+      
+          <div className="contactBoxContainer">
+            <ContactBox
+              className="contactBox"
+              onClick={() => {}}
+              title="Остались вопросы?"
+              description="Напишите нам. Мы ответим в течение 10 минут."
+            />
+          </div>
+  
       </div>
     </section>
   );

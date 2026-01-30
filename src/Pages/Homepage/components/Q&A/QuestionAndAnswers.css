@@ -40,6 +40,12 @@
   color: var(--color-neutral-300);
 }
 
+.contactBoxContainer{
+  background-color: #EEEEFB;
+  padding: 24px 24px;
+  border-radius: 20px;
+}
+
 @media (max-width: 750px) {
   .QAcontent{
        display: flex;
