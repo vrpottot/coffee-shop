@@ -1,7 +1,7 @@
 .QAroot {
-  width: 1777px;
+  max-width: 1777px;
   margin: 0 auto;
-  padding: 24px;
+  padding: 72px 24px;
 }
 
 .QAcontent {
@@ -9,34 +9,27 @@
   gap: 24px;
 }
 
-.qa {
-  width: 1309px;
-}
-
 .QAlist {
-  width: 1309px;
+  width: 100%;
   display: flex;
   flex-direction: column;
-  gap: 5px;
-  margin-bottom: 16px;
+  gap: 16px;
+  padding-bottom: 16px;
 }
 
 .moreLink {
   display: flex;
   justify-content: flex-end;
-  font-family: 'Onest', sans-serif;
-  font-size: 14px;
-  font-weight: 300;
-  line-height: 1.275;
+  font: var(--typography-body-small);
   color: var(--color-primary-300);
-  text-decoration: none;
+  text-decoration: underline;
+
 }
 
 .QAtitle {
   font-size: 32px;
   font-weight: 600;
-  line-height: 1.275;
-  margin-bottom: 24px;
+  margin-bottom: 20px;
   color: var(--color-neutral-300);
 }
 
@@ -54,3 +47,7 @@
     align-items: center;
   }
 }
+
+
+
+

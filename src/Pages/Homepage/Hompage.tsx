@@ -20,7 +20,7 @@ function Homepage() {
           <div style={{ 
             display: 'flex', 
             gap: '24px', 
-            margin: '80px 52px 0 52px', 
+            margin: '35px 52px 0 52px', 
             alignItems: 'stretch',
             justifyContent: 'space-between',
             maxWidth: '1776px'

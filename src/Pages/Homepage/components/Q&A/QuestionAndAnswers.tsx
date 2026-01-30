@@ -1,5 +1,5 @@
 import { QuestionAccordion } from "./QuestionAccordion/QuestionAccordion";
-import { ContactBox } from "./ConactBox/ConactBox";
+import { ContactBox } from "./ContactBox/ContactBox";
 import "./QuestionAndAnswers.css";
 interface QuestionAndAnswersProps {
   title?: string;
