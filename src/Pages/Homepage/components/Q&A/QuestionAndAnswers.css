@@ -23,7 +23,6 @@
   font: var(--typography-body-small);
   color: var(--color-primary-300);
   text-decoration: underline;
-
 }
 
 .QAtitle {
@@ -33,21 +32,11 @@
   color: var(--color-neutral-300);
 }
 
-.contactBoxContainer{
-  background-color: #EEEEFB;
-  padding: 24px 24px;
-  border-radius: 20px;
-}
-
 @media (max-width: 750px) {
-  .QAcontent{
-       display: flex;
+  .QAcontent {
+    display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
     align-items: center;
   }
 }
-
-
-
-
