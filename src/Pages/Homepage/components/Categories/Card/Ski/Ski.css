@@ -1,0 +1,83 @@
+/* Main container - relative positioning */
+.ski-root {
+  position: relative;
+  width: var(--gap-260);
+  height: var(--gap-260);
+}
+
+/* Background container with white bg and rounded corners */
+.ski-container {
+  position: absolute;
+  background-color: var(--color-white);
+  inset: 0;
+  overflow: hidden;
+  border-radius: var(--radius-16);
+}
+
+.ski-container:hover {
+  border: 1.5px solid var(--color-opacity-dark-70);
+}
+
+.ski-container:active {
+  border: none;
+  box-shadow: var(--shadow-pressed);
+}
+
+/* Background circle - positioned at center/top */
+.ski-background-circle {
+  position: absolute;
+  height: var(--gap-273);
+  left: 50%;
+  top: var(--gap-141);
+  transform: translateX(-50%);
+  width: var(--gap-272);
+}
+
+/* Title text */
+.ski-title {
+  position: absolute;
+  font-family: var(--font-family-base);
+  font-weight: var(--font-weight-semibold);
+  font-size: var(--font-size-5xl);
+  line-height: var(--line-height-none);
+  left: 50%;
+  color: var(--color-neutral-300);
+  text-align: center;
+  top: var(--gap-24);
+  transform: translateX(-50%);
+  margin: 0;
+  white-space: nowrap;
+}
+
+/* Character wrapper - positioned using percentages for precision */
+.ski-character {
+  position: absolute;
+  bottom: 10.42%;
+  left: 11.15%;
+  right: 6.6%;
+  top: 50%;
+}
+
+.ski-character-wrapper {
+  position: absolute;
+  inset: -0.49% 0 -0.49% -0.23%;
+}
+
+/* Speed lines wrapper */
+.ski-speed-lines {
+  position: absolute;
+  inset: 45.38% 17.83% 18.74% 23.46%;
+}
+
+.ski-speed-lines-wrapper {
+  position: absolute;
+  inset: -0.54% -0.33%;
+}
+
+/* Common image styles */
+.ski-image {
+  display: block;
+  max-width: none;
+  width: 100%;
+  height: 100%;
+}

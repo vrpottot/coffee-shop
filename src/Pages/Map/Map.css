@@ -1,0 +1,56 @@
+.map-page {
+  width: 100%;
+  min-height: 100vh;
+  padding: 0;
+  font-family: 'Onest', 'Onest Fallback', sans-serif;
+  display: flex;
+  flex-direction: column;
+}
+
+.map-development-message {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+  background: white;
+  color: black;
+}
+
+.map-development-message h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 16px;
+  color: #333;
+}
+
+.map-development-message p {
+  font-size: 1.2rem;
+  font-weight: 400;
+  opacity: 0.8;
+  line-height: 1.6;
+  color: #666;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .map-development-message h1 {
+    font-size: 2rem;
+  }
+  
+  .map-development-message p {
+    font-size: 1.1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .map-development-message h1 {
+    font-size: 1.5rem;
+  }
+  
+  .map-development-message p {
+    font-size: 1rem;
+  }
+}

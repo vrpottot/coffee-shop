@@ -1,0 +1,258 @@
+.blog {
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 35px;
+    gap: var(--gap-24);
+}
+
+.mobile-store,
+.container-blog {
+    display: flex;
+    width: 876px;
+    padding: 24px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 24px;
+
+    border-radius: 24px;
+    background: #F5F5F5;
+
+    box-shadow: 0px 0px 17.1px 0px rgba(0, 0, 0, 0.16);
+    position: relative;
+    left: 72px;
+}
+
+.blog-title {
+    align-self: stretch;
+    color: #000000;
+    font-family: Onest;
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 1.275;
+}
+
+/* ================= POSTS ================= */
+
+.post-1 {
+    width: 450px;
+    height: 300px;
+    padding: 18px 28px;
+
+    border-radius: 30px;
+    background: #FFFFFF;
+}
+
+.post-profile {
+    width: 388px;
+    height: 66px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.post-autor {
+    color: var(--color-neutral-300);
+    font: var(--typography-heading-3);
+}
+
+.date-create-post {
+    color: var(--color-primary-300);
+    font: var(--typography-body-small);
+    margin-right: 100px;
+}
+
+.post-1 h2 {
+    width: 333px;
+    color: #000000;
+    font-family: Onest;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 1.265;
+}
+
+/* ================= TAGS ================= */
+
+.post-icons {
+    display: flex;
+    gap: var(--gap-4);
+    margin-top: var(--gap-3);
+}
+
+.hiking {
+    display: flex;
+    align-items: center;
+    gap: var(--gap-8);
+
+    padding: var(--gap-4) var(--gap-8);
+    border-radius: var(--radius-28);
+    border: 1px solid var(--color-primary-200);
+    margin-top: 3px;
+}
+
+.hiking p {
+    color: var(--color-primary-300);
+    font: var(--typography-body-small);
+    font-size: 14px;
+}
+
+/* ================= CONTENT ================= */
+
+.post-description {
+    margin-top: var(--gap-8);
+    color: var(--color-black);
+    font: var(--typography-body);
+}
+
+.post-active {
+    display: flex;
+    align-items: center;
+    gap: var(--gap-8);
+}
+
+.post-views,
+.post-comment {
+    display: flex;
+    align-items: center;
+    gap: var(--gap-6);
+}
+
+.post-views p,
+.post-comment p {
+    color: var(--color-primary-200);
+    font: var(--typography-body);
+}
+
+/* ================= LAYOUT ================= */
+
+.blog-content {
+    display: flex;
+    width: 830px;
+    height: 612px;
+    gap: 24px;
+}
+
+.posts {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    width: 450px;
+}
+
+/* ================= BEST LOCATION ================= */
+
+.best-location {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 5px;
+
+    width: 360px;
+    height: 576px;
+    padding: 27px 29px;
+
+    border-radius: 30px;
+    background: #FFFFFF;
+}
+
+.hiking img {
+    width: var(--gap-12);
+    height: var(--gap-12);
+}
+
+.image-location {
+    height: 277px;
+    align-self: stretch;
+
+    border-radius: 12px;
+    background: url('/public/assets/tips and articles/articles/Rectangle 1108.png') center / cover no-repeat;
+}
+
+.read {
+    margin-top: 11px;
+    color: #000000;
+    font-family: Onest;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 1.275;
+}
+
+.block-downloads {
+    display: flex;
+    height: 578px;
+    width: 100%;
+    padding: 30px 16px 0 16px;
+    justify-content: center;
+    align-items: center;
+    gap: 52px;
+    border-radius: 20px 20px 0 0;
+    background: var(--Indigo-100, #EEEEFB);
+}
+
+.mobile-store h1 {
+    align-self: stretch;
+    color: var(--Black-300, #111);
+    font-family: Onest;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.store-downloads {
+    display: flex;
+    flex-direction: column;
+    display: flex;
+    width: 157px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 17px;
+}
+
+.phone {
+    display: flex;
+}
+
+.phone svg {
+    position: absolute;
+    bottom: 10px;
+    right: 50px;
+    z-index: 1;
+}
+
+.black-block {
+    margin-right: 5px;
+}
+
+.phone img {
+    z-index: 10;
+    margin-top: 55px;
+    border-top-left-radius: 26px;
+    border-top-right-radius: 26px;
+    margin-right: 25px;
+}
+
+.camera svg {
+    z-index: 11;
+    position: absolute;
+    bottom: 500px;
+    right: 240px;
+}
+
+.volumes {
+    display: flex;
+    z-index: 12;
+    position: absolute;
+    right: -3px;
+    top: 490px;
+}
+
+.power {
+    position: absolute;
+    right: -3px;
+    top: 260px;
+}
+
+.power svg {
+    z-index: 20;
+}
