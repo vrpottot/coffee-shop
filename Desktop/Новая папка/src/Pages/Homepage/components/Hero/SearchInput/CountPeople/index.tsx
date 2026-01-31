@@ -1,0 +1,1 @@
+export { CountPeople } from './CountPeople';
