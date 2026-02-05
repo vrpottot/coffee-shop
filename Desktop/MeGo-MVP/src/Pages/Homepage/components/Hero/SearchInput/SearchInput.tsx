@@ -5,6 +5,7 @@ import { Calendar } from './Calendar';
 import './SearchInput.css';
 import { CountPeople } from './CountPeople';
 import { PopularPlace } from './PopularPlace';
+import { Link } from "react-router-dom";
 
 interface SearchInputProps {
   placeholder: string;
@@ -158,7 +159,7 @@ export const SearchInput = ({
             </div>
           )}
         </div>
-
+        <Link to="/Tours">
         <Button
           appearance="primary"
           size="small"
@@ -168,8 +169,11 @@ export const SearchInput = ({
         >
           Поиск
         </Button>
+        </Link>
         {children && <div className="actions">{children}</div>}
       </div>
+      
     </div>
+  
   );
 };

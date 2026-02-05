@@ -16,6 +16,14 @@
   flex-shrink: 0;
 }
 
+.place-card-root:hover .place-card-content {
+  height: 220px;
+  transform: translateY(-2px);
+}
+.place-card-root:hover {
+  transform: translateY(-1px) scale(1.005);
+}
+
 /* Background layer */
 .place-card-background {
   position: absolute;
@@ -68,6 +76,10 @@
   border-radius: var(--radius-30);
   flex-shrink: 0;
   width: 100%;
+  overflow: hidden;
+  transition:
+    height 0.5s cubic-bezier(0.22, 1, 0.36, 1),
+    transform 0.5s cubic-bezier(0.22, 1, 0.36, 1);
 }
 
 /* Title */
@@ -131,4 +143,10 @@
   width: 100%;
   white-space: pre-wrap;
   margin: 0;
+}
+
+.place-card-root:hover .place-card-description {
+  height: 65%;
+  overflow-y: auto;  /* добавляем скролл на текст при ховере */
+  display: block;
 }

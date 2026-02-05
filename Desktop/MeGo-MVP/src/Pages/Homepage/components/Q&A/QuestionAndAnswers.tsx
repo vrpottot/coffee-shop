@@ -1,5 +1,5 @@
 import { QuestionAccordion } from "./QuestionAccordion/QuestionAccordion";
-import { ContactBox } from "./ConactBox/ConactBox";
+import { ContactBox } from "./ContactBox/ContactBox";
 import "./QuestionAndAnswers.css";
 interface QuestionAndAnswersProps {
   title?: string;
@@ -51,14 +51,16 @@ export const QuestionAndAnswers = ({
           </a>
         </div>
 
-        <div>
-          <ContactBox
-            className="contactBox"
-            onClick={() => {}}
-            title="Остались вопросы?"
-            description="Напишите нам. Мы ответим в течение 10 минут."
-          />
-        </div>
+      
+          <div>
+            <ContactBox
+              className="contactBox"
+              onClick={() => {}}
+              title="Остались вопросы?"
+              description="Напишите нам. Мы ответим в течение 10 минут."
+            />
+          </div>
+  
       </div>
     </section>
   );

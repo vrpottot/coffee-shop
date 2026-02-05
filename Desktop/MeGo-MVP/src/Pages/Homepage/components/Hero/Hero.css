@@ -13,8 +13,7 @@
   position: absolute;
   top: 0;
   left: 0;
-    background: url('https://www.figma.com/api/mcp/asset/76370f78-f63f-4745-94a8-af3bbf0a3f68') lightgray 0.346px -373.858px / 100% 319.884% no-repeat;
-
+background: url(/public/HeroBack.png) lightgray 0.346px -373.858px / 100% 319.884% no-repeat;
   width: 100%;
   height: 100%;
   object-fit: cover;

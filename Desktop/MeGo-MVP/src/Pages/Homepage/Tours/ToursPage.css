@@ -1,0 +1,31 @@
+.results-count {
+    padding-left: 30px;
+    padding-top: 20px;
+}
+
+.results-count p {
+    color: var(--Black-200, #8F8F8F);
+
+/* Text/cuption */
+    font-family: Onest;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin-left: 460px;
+}
+.results-count-number {
+    color: var(--Black-300, #111);
+
+/* Text/cuption */
+font-family: Onest;
+font-size: 12px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+}
+.filter-container {
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 10px;
+}

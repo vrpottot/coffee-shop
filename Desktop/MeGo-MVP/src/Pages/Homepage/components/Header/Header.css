@@ -119,6 +119,7 @@
 .langWrapper {
   position: relative;
 }
+
 .langDropdown {
   position: absolute;
   top: 68px;
@@ -228,4 +229,55 @@
   width: var(--icon-size-xl);
   height: var(--icon-size-xl);
   flex-shrink: 0;
+}
+
+/* Map Popup */
+.map-popup-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.50) 0%, rgba(0, 0, 0, 0.50) 100%), #F2F2F7;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2000;
+}
+
+.map-popup-content {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.map-popup-content .map-page {
+  position: relative;
+  width: auto;
+  height: auto;
+  background-color: transparent;
+}
+
+.map-close-btn {
+  position: absolute;
+  top: calc(50% - 467.5px);
+  left: calc(50% + 852px);
+  width: 24px;
+  height: 24px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2001;
+  padding: 0;
+  transition: opacity 0.2s;
+}
+
+.map-close-btn:hover {
+  opacity: 0.7;
 }

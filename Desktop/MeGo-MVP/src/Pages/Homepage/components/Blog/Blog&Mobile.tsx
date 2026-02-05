@@ -1,5 +1,5 @@
 import React from 'react'
-import './Blog.css'
+import './Blog&Mobile.css'
 
 const Blog: React.FC = () => {
     return (
