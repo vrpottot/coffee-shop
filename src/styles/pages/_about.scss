@@ -1,0 +1,230 @@
+@import '../utils/variables';
+@import '../utils/mixins';
+
+.about-page {
+  background: $background;
+  min-height: 100vh;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+
+  &.is-mounted {
+    opacity: 1;
+  }
+}
+
+.about-header {
+  background: $bg-dark;
+  color: $white;
+  padding: $spacing-5xl $spacing-md;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+
+  &__content {
+    position: relative;
+    z-index: 1;
+  }
+
+  &__title {
+    font-size: clamp(2.5rem, 6vw, 4rem);
+    margin-bottom: $spacing-sm;
+  }
+
+  &__subtitle {
+    font-size: 1.125rem;
+    opacity: 0.7;
+  }
+}
+
+.about-story {
+  padding: $spacing-5xl 0;
+
+  &__grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: $spacing-4xl;
+    align-items: center;
+
+    @media (max-width: $breakpoint-lg) {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  &__content {
+    .section-subtitle {
+      color: $primary;
+      text-transform: uppercase;
+      font-weight: 700;
+      font-size: 0.875rem;
+      margin-bottom: $spacing-sm;
+      display: block;
+    }
+
+    .section-title {
+      font-size: 2.5rem;
+      margin-bottom: $spacing-lg;
+    }
+  }
+
+  &__text {
+    p {
+      color: $text-secondary;
+      font-size: 1.125rem;
+      line-height: 1.7;
+      margin-bottom: $spacing-md;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  &__image-wrapper {
+    position: relative;
+    border-radius: $radius-2xl;
+    overflow: hidden;
+    height: 500px;
+    box-shadow: $shadow-2xl;
+  }
+
+  &__image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
+.about-values {
+  padding: $spacing-5xl 0;
+  background: rgba(120, 53, 15, 0.03);
+
+  .values-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: $spacing-2xl;
+    margin-top: $spacing-3xl;
+  }
+}
+
+.value-card {
+  background: white;
+  padding: $spacing-2xl;
+  border-radius: $radius-2xl;
+  text-align: center;
+  transition: all $transition-base;
+  border: 1px solid rgba(120, 53, 15, 0.05);
+
+  &:hover {
+    transform: translateY(-8px);
+    box-shadow: $shadow-xl;
+  }
+
+  &__icon {
+    color: $primary;
+    margin-bottom: $spacing-md;
+  }
+
+  &__title {
+    font-size: 1.5rem;
+    margin-bottom: $spacing-sm;
+  }
+
+  &__text {
+    color: $text-secondary;
+    font-size: 0.9375rem;
+    line-height: 1.6;
+  }
+}
+
+.about-team {
+  padding: $spacing-5xl 0;
+
+  .team-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: $spacing-2xl;
+    margin-top: $spacing-3xl;
+  }
+}
+
+.team-card {
+  background: white;
+  border-radius: $radius-2xl;
+  overflow: hidden;
+  border: 1px solid rgba(120, 53, 15, 0.05);
+  transition: all $transition-base;
+
+  &:hover {
+    transform: translateY(-8px);
+    box-shadow: $shadow-xl;
+
+    .team-card__image {
+      transform: scale(1.05);
+    }
+  }
+
+  &__image-wrapper {
+    height: 340px;
+    overflow: hidden;
+  }
+
+  &__image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.6s ease;
+  }
+
+  &__content {
+    padding: $spacing-xl;
+    text-align: center;
+  }
+
+  &__name {
+    font-size: 1.375rem;
+    margin-bottom: $spacing-xs;
+  }
+
+  &__role {
+    color: $primary;
+    font-weight: 600;
+    font-size: 0.9375rem;
+  }
+}
+
+.about-awards {
+  padding: $spacing-5xl 0;
+  background: $bg-dark;
+  color: $white;
+  text-align: center;
+
+  &__title {
+    font-size: 2.5rem;
+    margin-bottom: $spacing-3xl;
+  }
+
+  .awards-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: $spacing-3xl;
+  }
+}
+
+.award-item {
+  &__icon {
+    font-size: 3rem;
+    margin-bottom: $spacing-md;
+    display: block;
+  }
+
+  &__year {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: $accent;
+    margin-bottom: $spacing-xs;
+  }
+
+  &__text {
+    opacity: 0.7;
+  }
+}

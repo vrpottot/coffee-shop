@@ -1,0 +1,183 @@
+// Container
+.container {
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 $spacing-lg;
+  
+  @include lg {
+    padding: 0 $spacing-2xl;
+  }
+}
+
+// Button styles
+.btn {
+  @include flex-center;
+  gap: $spacing-sm;
+  padding: $spacing-md $spacing-2xl;
+  border-radius: $radius-full;
+  font-family: $font-heading;
+  font-weight: $font-weight-semibold;
+  font-size: $font-size-base;
+  transition: all $transition-base;
+  cursor: pointer;
+  border: 2px solid transparent;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  
+  &:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+  }
+}
+
+.btn-primary {
+  background: $coffee-brown;
+  color: white;
+  
+  &:hover:not(:disabled) {
+    background: $coffee-dark;
+    transform: translateY(-2px);
+    box-shadow: $shadow-lg;
+  }
+}
+
+.btn-secondary {
+  background: $accent-orange;
+  color: white;
+  
+  &:hover:not(:disabled) {
+    background: darken($accent-orange, 10%);
+    transform: translateY(-2px);
+  }
+}
+
+.btn-outline {
+  background: transparent;
+  border-color: $coffee-brown;
+  color: $coffee-brown;
+  
+  &:hover:not(:disabled) {
+    background: $coffee-brown;
+    color: white;
+  }
+}
+
+.btn-light {
+  background: $foam;
+  color: $coffee-dark;
+  border-color: $border-color;
+  
+  &:hover:not(:disabled) {
+    background: white;
+    border-color: $coffee-brown;
+  }
+}
+
+.btn-large {
+  padding: $spacing-lg $spacing-3xl;
+  font-size: $font-size-lg;
+}
+
+.btn-small {
+  padding: $spacing-sm $spacing-lg;
+  font-size: $font-size-sm;
+}
+
+// Section spacing
+.section {
+  padding: $spacing-4xl 0;
+  
+  @include lg {
+    padding: $spacing-5xl 0;
+  }
+}
+
+.section-dark {
+  background: $bg-dark;
+  color: white;
+}
+
+// Text utilities
+.text-center {
+  text-align: center;
+}
+
+.text-coffee {
+  color: $coffee-brown;
+}
+
+.text-accent {
+  color: $accent-orange;
+}
+
+// Card
+.card {
+  background: white;
+  border-radius: $radius-xl;
+  padding: $spacing-xl;
+  box-shadow: $shadow-md;
+  transition: all $transition-base;
+  border: 1px solid $border-color;
+  
+  &:hover {
+    box-shadow: $shadow-xl;
+    transform: translateY(-4px);
+  }
+}
+
+// Badge
+.badge {
+  display: inline-flex;
+  align-items: center;
+  padding: $spacing-xs $spacing-md;
+  border-radius: $radius-full;
+  font-size: $font-size-xs;
+  font-weight: $font-weight-semibold;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  
+  &.badge-hot {
+    background: rgba($accent-red, 0.1);
+    color: $accent-red;
+  }
+  
+  &.badge-new {
+    background: rgba($accent-green, 0.1);
+    color: $accent-green;
+  }
+  
+  &.badge-popular {
+    background: rgba($accent-orange, 0.1);
+    color: $accent-orange;
+  }
+}
+
+// Price
+.price {
+  font-family: $font-heading;
+  font-size: $font-size-2xl;
+  font-weight: $font-weight-bold;
+  color: $coffee-brown;
+}
+
+// Divider
+.divider {
+  height: 2px;
+  background: linear-gradient(90deg, transparent, $border-color, transparent);
+  margin: $spacing-3xl 0;
+}
+
+// Loading spinner
+.spinner {
+  width: 40px;
+  height: 40px;
+  border: 4px solid $border-color;
+  border-top-color: $coffee-brown;
+  border-radius: $radius-full;
+  animation: spin 0.8s linear infinite;
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}

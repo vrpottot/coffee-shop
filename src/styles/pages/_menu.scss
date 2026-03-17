@@ -1,0 +1,234 @@
+@import '../utils/variables';
+@import '../utils/mixins';
+
+.menu-page {
+  background: $background;
+  min-height: 100vh;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+
+  &.is-mounted {
+    opacity: 1;
+  }
+}
+
+.menu-header {
+  background: $bg-dark;
+  color: $white;
+  padding: $spacing-5xl $spacing-md;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: radial-gradient(circle at center, rgba($accent, 0.05), transparent);
+  }
+
+  &__content {
+    position: relative;
+    z-index: 1;
+  }
+
+  &__title {
+    font-size: clamp(2.5rem, 6vw, 4rem);
+    margin-bottom: $spacing-sm;
+  }
+
+  &__subtitle {
+    font-size: 1.125rem;
+    opacity: 0.7;
+    font-family: $font-body;
+  }
+}
+
+.menu-nav {
+  background: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  padding: $spacing-md 0;
+  position: sticky;
+  top: 0;
+  z-index: $z-sticky;
+  border-bottom: 1px solid rgba(120, 53, 15, 0.1);
+
+  &__container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    gap: $spacing-md;
+    padding: 0 $spacing-md;
+    flex-wrap: wrap;
+  }
+
+  &__item {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.625rem 1.25rem;
+    background: transparent;
+    border: 1px solid rgba(120, 53, 15, 0.1);
+    border-radius: $radius-full;
+    color: $text-secondary;
+    font-family: $font-body;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all $transition-base;
+
+    &:hover {
+      background: rgba(120, 53, 15, 0.05);
+      border-color: $primary;
+      color: $primary;
+    }
+
+    &.is-active {
+      background: $primary;
+      border-color: $primary;
+      color: $white;
+      box-shadow: $shadow-md;
+    }
+  }
+}
+
+.menu-content {
+  padding: $spacing-4xl 0;
+}
+
+.menu-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: $spacing-2xl;
+  margin-top: $spacing-3xl;
+}
+
+.menu-card {
+  background: $white;
+  border-radius: $radius-2xl;
+  overflow: hidden;
+  border: 1px solid rgba(120, 53, 15, 0.05);
+  transition: all $transition-base;
+
+  &:hover {
+    transform: translateY(-8px);
+    box-shadow: $shadow-xl;
+
+    .menu-card__image {
+      transform: scale(1.1);
+    }
+  }
+
+  &__image-wrapper {
+    height: 240px;
+    overflow: hidden;
+    position: relative;
+  }
+
+  &__image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.6s ease;
+  }
+
+  &__badges {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  &__content {
+    padding: $spacing-xl;
+  }
+
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: $spacing-sm;
+  }
+
+  &__title {
+    font-size: 1.375rem;
+    color: $text;
+    margin: 0;
+  }
+
+  &__price {
+    font-family: $font-heading;
+    font-weight: 700;
+    color: $primary;
+    font-size: 1.25rem;
+  }
+
+  &__description {
+    color: $text-secondary;
+    font-size: 0.9375rem;
+    line-height: 1.5;
+    margin: 0;
+  }
+}
+
+.badge {
+  padding: 0.25rem 0.75rem;
+  border-radius: $radius-full;
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+
+  &--popular {
+    background: rgba(232, 147, 76, 0.1);
+    color: $accent;
+  }
+
+  &--new {
+    background: rgba(120, 53, 15, 0.1);
+    color: $primary;
+  }
+
+  &--hot {
+    background: rgba(196, 69, 54, 0.1);
+    color: #c44536;
+  }
+}
+
+.menu-info {
+  margin-bottom: $spacing-5xl;
+
+  &__card {
+    background: $bg-dark;
+    color: $white;
+    padding: $spacing-3xl;
+    border-radius: $radius-2xl;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+
+    &::after {
+      content: '';
+      position: absolute;
+      bottom: 0; right: 0;
+      width: 150px; height: 150px;
+      background: radial-gradient(circle at center, rgba($accent, 0.1), transparent);
+      border-radius: 50%;
+      transform: translate(30%, 30%);
+    }
+  }
+
+  &__title {
+    font-size: 1.875rem;
+    margin-bottom: $spacing-md;
+  }
+
+  &__text {
+    opacity: 0.8;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+}

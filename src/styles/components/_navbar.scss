@@ -1,0 +1,151 @@
+@import '../utils/variables';
+@import '../utils/mixins';
+
+.navbar {
+  position: fixed;
+  top: 1.5rem;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 90%;
+  max-width: 1200px;
+  background: rgba(254, 243, 199, 0.7); // $background with opacity
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(120, 53, 15, 0.1);
+  border-radius: $radius-2xl;
+  z-index: $z-fixed;
+  padding: 0.75rem 1.5rem;
+  transition: all $transition-base;
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__logo {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    color: $primary;
+    text-decoration: none;
+    font-family: $font-display;
+    font-size: 1.5rem;
+    font-weight: 800;
+    letter-spacing: -0.02em;
+
+    svg {
+      color: $primary;
+    }
+  }
+
+  &__links {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+
+    @media (max-width: $breakpoint-md) {
+      display: none;
+    }
+  }
+
+  &__link {
+    color: $text-primary;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 0.9375rem;
+    transition: color $transition-fast;
+    position: relative;
+
+    &::after {
+      content: '';
+      position: absolute;
+      bottom: -4px;
+      left: 0;
+      width: 0;
+      height: 2px;
+      background: $accent;
+      transition: width $transition-base;
+    }
+
+    &:hover {
+      color: $primary;
+      &::after {
+        width: 100%;
+      }
+    }
+  }
+
+  &__cta {
+    background: $primary;
+    color: $white;
+    padding: 0.625rem 1.25rem;
+    border-radius: $radius-lg;
+    font-weight: 600;
+    font-size: 0.875rem;
+    text-decoration: none;
+    transition: transform $transition-base, background $transition-base;
+
+    &:hover {
+      background: $secondary;
+      transform: translateY(-2px);
+    }
+  }
+
+  &__mobile-toggle {
+    display: none;
+    background: none;
+    border: none;
+    color: $primary;
+    cursor: pointer;
+    padding: 0.5rem;
+    border-radius: $radius-sm;
+    transition: background $transition-fast;
+
+    &:hover {
+      background: rgba(120, 53, 15, 0.05);
+    }
+
+    @media (max-width: $breakpoint-md) {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+
+  &__mobile-menu {
+    display: none;
+    
+    @media (max-width: $breakpoint-md) {
+      display: flex;
+      flex-direction: column;
+      gap: 1.25rem;
+      padding: 1.5rem 0;
+      border-top: 1px solid rgba(120, 53, 15, 0.1);
+      margin-top: 0.75rem;
+      animation: slideDown 0.3s ease-out forwards;
+
+      .navbar__link {
+        font-size: 1.125rem;
+        padding: 0.5rem 0;
+      }
+
+      .navbar__cta {
+        text-align: center;
+        margin-top: 0.5rem;
+        padding: 0.875rem;
+      }
+    }
+  }
+}
+
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

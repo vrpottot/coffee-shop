@@ -1,0 +1,50 @@
+@import '../utils/variables';
+
+.btn-premium {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.75rem;
+  background: $primary;
+  color: $white;
+  padding: 1rem 2rem;
+  border-radius: $radius-lg;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all $transition-base;
+  border: 1px solid transparent;
+  cursor: pointer;
+
+  &:hover {
+    background: $secondary;
+    transform: translateY(-2px);
+    box-shadow: $shadow-lg;
+  }
+
+  &--gold {
+    background: $accent;
+    color: $text;
+    &:hover {
+        background: lighten($accent, 10%);
+    }
+  }
+}
+
+.btn-outline {
+  display: inline-flex;
+  align-items: center;
+  padding: 1rem 2rem;
+  border-radius: $radius-lg;
+  font-weight: 600;
+  text-decoration: none;
+  color: $white;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(4px);
+  transition: all $transition-base;
+  cursor: pointer;
+
+  &:hover {
+    background: white;
+    color: $text;
+    border-color: white;
+  }
+}
