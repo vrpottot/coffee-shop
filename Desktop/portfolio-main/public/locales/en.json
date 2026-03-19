@@ -1,0 +1,186 @@
+{
+  "nav": {
+    "about": "About",
+    "projects": "Projects",
+    "skills": "Skills",
+    "resume": "Resume",
+    "contact": "Contact",
+    "downloadResume": "Download Resume"
+  },
+  "hero": {
+    "status": "Open for new opportunities",
+    "title": "Frontend Developer",
+    "titleSuffix": "& UI/UX Enthusiast",
+    "description": "I create products that users love to use.",
+    "specialization": "I specialize in React, JavaScript, and modern web technologies.",
+    "viewWorks": "View Works",
+    "downloadResume": "Download Resume"
+  },
+  "projects": {
+    "label": "Featured Works",
+    "title": "Latest Projects",
+    "search": "Search projects...",
+    "sort": "Sort:",
+    "sortDefault": "Default",
+    "sortYearDesc": "By year (newest)",
+    "sortYearAsc": "By year (oldest)",
+    "sortTitle": "By title",
+    "all": "All",
+    "frontend": "Frontend",
+    "backend": "Backend",
+    "fullstack": "Fullstack",
+    "viewProject": "View Project →",
+    "empty": "No projects found",
+    "emptyHint": "Try changing filters or search query",
+    "loading": "Loading projects...",
+    "error": "Error loading projects",
+    "retry": "Try again",
+    "openProject": "Open Project",
+    "github": "GitHub",
+    "close": "Close",
+    "description": "Project Description",
+    "challenge": "Challenge",
+    "solution": "Solution",
+    "technologies": "Technologies",
+    "features": "Key Features",
+    "role": "Role",
+    "duration": "Duration",
+    "team": "Team",
+    "status": "Status",
+    "completed": "Completed",
+    "featured": "Featured Project",
+    "prevPage": "Previous page",
+    "nextPage": "Next page",
+    "page": "Page"
+  },
+  "about": {
+    "label": "About",
+    "title": "What I Do",
+    "services": {
+      "title": "Full-Stack Development",
+      "description": "Complete website creation cycle: from prototyping in Figma to layout and CMS integration. Responsiveness, SEO optimization and high performance."
+    },
+
+    "philosophy": {
+      "title": "Attention to Detail",
+      "description": "Every pixel matters. I create systems that scale and last long."
+    },
+    "titleOld": "Turning Ideas Into",
+    "titleAccent": "Working Products",
+    "description1": "I'm a developer with 1.5+ years of experience creating web applications and interfaces. I specialize in modern technologies and development approaches, always striving for clean code and excellent user experience.",
+    "description2": "During my work, I've successfully implemented 12+ projects — from small landing pages to complex SPA applications. I've worked with both small startups and large companies, helping them create products that solve real user problems.",
+    "description3": "My approach:",
+    "description3Text": "Focus on business metrics, clean code, modern development practices, and most importantly — understanding the needs of users and business.",
+    "stats": {
+      "experience": "Years of experience",
+      "projects": "Projects",
+      "completed": "Completed",
+      "completedProjects": "Completed projects",
+      "clients": "Satisfied clients"
+    },
+    "features": {
+      "development": "Development",
+      "developmentDesc": "Clean, scalable code using modern frameworks and best practices",
+      "design": "Design",
+      "designDesc": "Creating intuitive interfaces with focus on user experience and visual appeal",
+      "optimization": "Optimization",
+      "optimizationDesc": "Improving performance and loading speed for better user experience"
+    },
+    "tabs": {
+      "story": "Story",
+      "skills": "Skills",
+      "goals": "Goals"
+    },
+    "timeline": {
+      "title": "Timeline",
+      "start": "Career Start",
+      "startDesc": "First steps in web development, learning HTML, CSS and JavaScript basics. Working on first projects and gaining practical experience.",
+      "growth": "Growth & Development",
+      "growthDesc": "Deepening knowledge in React, TypeScript and modern development tools. Working on more complex projects and improving skills.",
+      "now": "Current Stage",
+      "nowDesc": "Active development of modern web applications, working with various technologies and continuous learning of new approaches."
+    },
+    "achievements": {
+      "title": "Achievements",
+      "quality": "Quality",
+      "qualityDesc": "Striving to write clean, maintainable code following best development practices",
+      "innovation": "Innovation",
+      "innovationDesc": "Using modern technologies and approaches to create effective solutions",
+      "passion": "Passion",
+      "passionDesc": "Genuine love for development and constant desire to create something new and interesting"
+    },
+    "goals": {
+      "quality": "Create quality products",
+      "learn": "Constantly learn new things",
+      "grow": "Grow as a developer"
+    }
+  },
+  "skills": {
+    "label": "Skills",
+    "title": "Skills",
+    "hardSkills": "Technical Skills",
+    "softSkills": "Soft Skills",
+    "softSkillsList": {
+      "communication": "Communication",
+      "teamwork": "Teamwork",
+      "problemSolving": "Problem Solving",
+      "determination": "Determination",
+      "adaptability": "Adaptability",
+      "creativity": "Creativity"
+    },
+    "frontend": "Frontend Development",
+    "backend": "Backend & Tools",
+    "teamwork": "Teamwork",
+    "teamworkDesc": "Experience working in agile teams",
+    "communication": "Communication",
+    "communicationDesc": "Clear communication with the team",
+    "problemSolving": "Problem Solving",
+    "problemSolvingDesc": "Analytical approach",
+    "learning": "Learning Ability",
+    "learningDesc": "Quick to learn new things"
+  },
+  "footer": {
+    "status": "Open to communication",
+    "title": "Let's Discuss",
+    "titleAccent": "Your Project",
+    "description": "Ready to answer any questions and help bring your ideas to life. Choose a convenient way to contact!",
+    "contact": "Contact",
+    "call": "Call",
+    "email": "Email",
+    "telegram": "Telegram",
+    "location": "Location",
+    "locationValue": "Rostov-on-Don, Russia",
+    "timezone": "UTC+3",
+    "write": "Write",
+    "open": "Open",
+    "connect": "Contact",
+    "copied": "✓ Copied!",
+    "copyHint": "Ctrl+Click to copy",
+    "navigation": "Navigation",
+    "social": "Social Media",
+    "home": "Home",
+    "copyright": "© 2026 Portfolio. All rights reserved.",
+    "systems": "Systems operational"
+  },
+  "theme": {
+    "light": "Light",
+    "dark": "Dark",
+    "toggleLight": "Switch to light theme",
+    "toggleDark": "Switch to dark theme",
+    "selectTheme": "Select theme"
+  },
+  "common": {
+    "skipToContent": "Skip to main content",
+    "openMenu": "Open menu",
+    "closeMenu": "Close menu",
+    "scrollToTop": "Scroll to top",
+    "switchToEnglish": "Switch to English",
+    "switchToRussian": "Switch to Russian",
+    "mainNavigation": "Main navigation",
+    "aiPreview": "AI Preview",
+    "invalidDataFormat": "Invalid data format",
+    "noProjectsFound": "No projects found",
+    "unknownError": "Unknown error",
+    "failedToLoadResource": "Failed to load resource"
+  }
+}

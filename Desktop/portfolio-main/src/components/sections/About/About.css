@@ -1,0 +1,90 @@
+/* About section styles */
+
+/* Light theme overrides */
+.light-theme #about h2 {
+  color: var(--color-primary) !important;
+}
+
+.light-theme #about .text-white {
+  color: var(--color-primary) !important;
+}
+
+.light-theme #about .text-stone-400 {
+  color: var(--color-text-muted) !important;
+}
+
+.light-theme #about .text-stone-500 {
+  color: var(--color-text-muted) !important;
+}
+
+.light-theme #about .text-stone-300 {
+  color: var(--color-text-light) !important;
+}
+
+.light-theme #about .bg-stone-800 {
+  background-color: rgba(0, 0, 0, 0.08) !important;
+}
+
+.light-theme #about .bg-black\/40 {
+  background-color: rgba(0, 0, 0, 0.03) !important;
+}
+
+.light-theme #about .bg-black\/20 {
+  background-color: rgba(0, 0, 0, 0.02) !important;
+}
+
+.light-theme #about .border-white\/5 {
+  border-color: rgba(0, 0, 0, 0.08) !important;
+}
+
+.light-theme #about .border-white\/10 {
+  border-color: rgba(0, 0, 0, 0.12) !important;
+}
+
+.light-theme #about .bg-white\/10 {
+  background-color: rgba(0, 0, 0, 0.05) !important;
+}
+
+.light-theme #about .bg-white\/5 {
+  background-color: rgba(0, 0, 0, 0.03) !important;
+}
+
+.light-theme #about .hover\:bg-white\/5:hover {
+  background-color: rgba(0, 0, 0, 0.05) !important;
+}
+
+.light-theme #about .bg-stone-700,
+.light-theme #about .bg-stone-600,
+.light-theme #about .bg-stone-500 {
+  background-color: rgba(139, 92, 246, 0.15) !important;
+}
+
+.light-theme #about .border-\[#1a1a1a\] {
+  border-color: rgba(255, 255, 255, 0.4) !important;
+}
+
+/* Code block styles for light theme */
+.light-theme #about .bg-purple-500\/20 {
+  background-color: rgba(139, 92, 246, 0.15) !important;
+}
+
+.light-theme #about .border-purple-500\/30 {
+  border-color: rgba(139, 92, 246, 0.25) !important;
+}
+
+.light-theme #about .text-purple-400 {
+  color: #8b5cf6 !important;
+}
+
+.light-theme #about .bg-purple-500 {
+  background-color: #8b5cf6 !important;
+}
+
+/* Glass blocks borders for light theme */
+.light-theme #about .glass {
+  border: 1px solid rgba(0, 0, 0, 0.12) !important;
+}
+
+.light-theme #about .glass-hover:hover {
+  border-color: rgba(0, 0, 0, 0.2) !important;
+}

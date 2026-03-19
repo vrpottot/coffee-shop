@@ -1,0 +1,127 @@
+.particle-dots-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: var(--z-background);
+    pointer-events: none;
+    overflow: hidden;
+}
+
+.particle-dot {
+    position: absolute;
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    background: var(--color-primary);
+    opacity: 0.5;
+    pointer-events: none;
+    box-shadow: 0 0 10px rgba(139, 92, 246, 0.4);
+    will-change: transform;
+}
+
+.particle-connections-svg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+}
+
+.particle-connection {
+    stroke: var(--color-primary);
+    stroke-width: 0.5;
+    pointer-events: none;
+}
+
+@keyframes floatReverse {
+    0%, 100% {
+        transform: translate(0, 0) scale(1);
+    }
+    25% {
+        transform: translate(-40px, 30px) scale(1.1);
+    }
+    50% {
+        transform: translate(20px, -40px) scale(0.8);
+    }
+    75% {
+        transform: translate(-30px, -20px) scale(1.3);
+    }
+}
+
+@keyframes floatSlow {
+    0%, 100% {
+        transform: translate(0, 0) scale(1);
+    }
+    33% {
+        transform: translate(25px, 35px) scale(1.15);
+    }
+    66% {
+        transform: translate(-35px, 25px) scale(0.85);
+    }
+}
+
+@keyframes floatFast {
+    0%, 100% {
+        transform: translate(0, 0) scale(1);
+    }
+    20% {
+        transform: translate(40px, -30px) scale(1.3);
+    }
+    40% {
+        transform: translate(-25px, 45px) scale(0.7);
+    }
+    60% {
+        transform: translate(35px, 15px) scale(1.2);
+    }
+    80% {
+        transform: translate(-15px, -35px) scale(0.9);
+    }
+}
+
+/* Линии соединений */
+.particle-connections {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+}
+
+.particle-connection {
+    stroke: var(--color-primary);
+    stroke-width: 1.5;
+    opacity: 0.4;
+    transition: opacity 0.3s ease;
+}
+
+/* Адаптация для светлой темы */
+.light-theme .particle-dot {
+    opacity: 0.4;
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.2);
+}
+
+.light-theme .particle-connection {
+    stroke: var(--color-primary);
+    opacity: 0.15;
+}
+
+/* Адаптация для мобильных устройств */
+@media (max-width: 768px) {
+    .particle-dot {
+        width: 5px;
+        height: 5px;
+        opacity: 0.6;
+    }
+}
+
+@media (max-width: 480px) {
+    .particle-dot {
+        width: 4px;
+        height: 4px;
+        opacity: 0.5;
+    }
+}

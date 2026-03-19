@@ -1,0 +1,51 @@
+/* Skills section styles */
+
+/* Light theme overrides */
+.light-theme #skills h2 {
+  color: var(--color-primary) !important;
+}
+
+.light-theme #skills .text-white {
+  color: var(--color-primary) !important;
+}
+
+.light-theme #skills .text-stone-400 {
+  color: var(--color-text-muted) !important;
+}
+
+.light-theme #skills .bg-stone-800 {
+  background-color: rgba(0, 0, 0, 0.08) !important;
+}
+
+.light-theme #skills .bg-white\/10 {
+  background-color: rgba(0, 0, 0, 0.05) !important;
+}
+
+.light-theme #skills .hover\:bg-white\/5:hover {
+  background-color: rgba(0, 0, 0, 0.03) !important;
+}
+
+.light-theme #skills .bg-purple-500\/20 {
+  background-color: rgba(139, 92, 246, 0.15) !important;
+}
+
+.light-theme #skills .group-hover\:bg-purple-500\/30:hover {
+  background-color: rgba(139, 92, 246, 0.2) !important;
+}
+
+.light-theme #skills .text-purple-400 {
+  color: #8b5cf6 !important;
+}
+
+.light-theme #skills .bg-purple-500 {
+  background-color: #8b5cf6 !important;
+}
+
+/* Glass blocks borders for light theme */
+.light-theme #skills .glass {
+  border: 1px solid rgba(0, 0, 0, 0.12) !important;
+}
+
+.light-theme #skills .glass-hover:hover {
+  border-color: rgba(0, 0, 0, 0.2) !important;
+}

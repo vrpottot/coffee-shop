@@ -1,0 +1,42 @@
+.techstack-section {
+  position: relative;
+  z-index: 10;
+  padding: 4rem 0;
+  border-top: 1px solid var(--color-glass-border);
+  border-bottom: 1px solid var(--color-glass-border);
+  background: transparent;
+  overflow: hidden;
+}
+
+.light-theme .techstack-section {
+  background: transparent;
+}
+
+.techstack-container {
+  mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
+  -webkit-mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
+}
+
+.techstack-content {
+  display: flex;
+  gap: 3rem;
+  align-items: center;
+  white-space: nowrap;
+  animation: scroll 30s linear infinite;
+}
+
+.techstack-item {
+  font-size: 1.5rem;
+  font-family: monospace;
+  color: var(--color-text-muted);
+  flex-shrink: 0;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}

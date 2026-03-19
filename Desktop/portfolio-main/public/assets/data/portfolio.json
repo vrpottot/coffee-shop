@@ -1,0 +1,206 @@
+{
+  "projects": [
+    {
+      "id": "food-project",
+      "title": "Food Delivery",
+      "description": "Платформа для заказа еды онлайн",
+      "description_en": "Online food ordering platform",
+      "category": "frontend",
+      "tags": [
+        "React",
+        "CSS3",
+        "JavaScript"
+      ],
+      "link": "https://vrpottot.github.io/food-project/",
+      "github": "https://github.com/vrpottot/food-project",
+      "image": {
+        "type": "placeholder",
+        "content": "/assets/img/Img_Food.png",
+        "alt": "Food project preview"
+      },
+      "year": 2025
+    },
+    {
+      "id": "crypto-app",
+      "title": "Crypto Tracker",
+      "description": "Приложение для отслеживания криптовалют",
+      "description_en": "Cryptocurrency tracking application",
+      "category": "frontend",
+      "tags": [
+        "React",
+        "API",
+        "JavaScript",
+        "CSS3"
+      ],
+      "link": "https://vrpottot.github.io/crypto-app/",
+      "github": "https://github.com/vrpottot/crypto-app",
+      "image": {
+        "type": "placeholder",
+        "content": "/assets/img/Img_Crypto.png",
+        "alt": "Crypto app preview"
+      },
+      "year": 2024,
+      "projectType": "landing"
+    },
+    {
+      "id": "tech-market",
+      "title": "Tech Market",
+      "description": "Интернет-магазин электроники",
+      "description_en": "Electronics online store",
+      "category": "frontend",
+      "tags": [
+        "React",
+        "Node.js",
+        "MongoDB",
+        "Express"
+      ],
+      "link": "https://vrpottot.github.io/Tech-store/",
+      "github": "https://github.com/vrpottot/tech-market",
+      "image": {
+        "type": "placeholder",
+        "content": "/assets/img/tech-market.png",
+        "alt": "Tech market preview"
+      },
+      "year": 2024,
+      "projectType": "landing"
+    },
+    {
+      "id": "shulder",
+      "title": "Shulder",
+      "description": "Платформа для обучения",
+      "description_en": "Learning platform",
+      "category": "frontend",
+      "tags": [
+        "React",
+        "Node.js",
+        "MongoDB",
+        "Express"
+      ],
+      "link": "https://vrpottot.github.io/scheduler/",
+      "github": "https://github.com/vrpottot/scheduler",
+      "image": {
+        "type": "placeholder",
+        "content": "/assets/img/Img_Scheulder.png",
+        "alt": "Shulder preview"
+      },
+      "year": 2023,
+      "projectType": "web-app"
+    },
+    {
+      "id": "berry",
+      "title": "Berry Shop",
+      "description": "Интернет-магазин ягод",
+      "description_en": "Berry online store",
+      "category": "frontend",
+      "tags": [
+        "HTML5",
+        "CSS3",
+        "JavaScript",
+        "API"
+      ],
+      "link": "https://vrpottot.github.io/-Berry_shop/",
+      "github": "https://github.com/vrpottot/-Berry_shop",
+      "image": {
+        "type": "placeholder",
+        "content": "/assets/img/Img_Berry.png",
+        "alt": "Berry Shop preview"
+      },
+      "year": 2023,
+      "projectType": "landing"
+    },
+    {
+      "id": "travle",
+      "title": "Travle",
+      "description": "Сайт путешестивия",
+      "description_en": "Site travel",
+      "category": "frontend",
+      "tags": [
+        "React",
+        "CSS3",
+        "TypeScript",
+        "API"
+      ],
+      "link": "https://vrpottot.github.io/planner",
+      "github": "https://github.com/vrpottot/trave-main",
+      "image": {
+        "type": "placeholder",
+        "content": "/assets/img/berry.png",
+        "alt": "Berry Shop preview"
+      },
+      "year": 2023,
+      "projectType": "landing"
+    },
+    {
+      "id": "fitzone-website",
+      "title": "Fitzone Website",
+      "description": "Сайт для фитнес-клуба",
+      "description_en": "Fitness club website",
+      "category": "frontend",
+      "tags": [
+        "JavaScript",
+        "HTML5",
+        "CSS3"
+      ],
+      "link": "https://vrpottot.github.io/fitzone-website/",
+      "github": "https://github.com/vrpottot/fitzone-website",
+      "image": {
+        "type": "placeholder",
+        "content": "/assets/img/Img_Fitzone.png",
+        "alt": "Fitzone preview"
+      },
+      "year": 2026,
+      "projectType": "landing"
+    },
+    {
+      "id": "coffee-shop",
+      "title": "Coffee Shop",
+      "description": "Интернет-магазин кофе",
+      "description_en": "Coffee online store",
+      "category": "frontend",
+      "tags": [
+        "JavaScript",
+        "HTML5",
+        "CSS3"
+      ],
+      "link": "https://vrpottot.github.io/coffee-shop/",
+      "github": "https://github.com/vrpottot/coffee-shop",
+      "image": {
+        "type": "placeholder",
+        "content": "/assets/img/Img_coffe.png",
+        "alt": "Coffee shop preview"
+      },
+      "year": 2025,
+      "projectType": "landing"
+    },
+    {
+      "id": "Bloxhell",
+      "title": "Bloxhell",
+      "description": "Проект Bloxhell",
+      "description_en": "Bloxhell project",
+      "category": "fullstack",
+      "tags": [
+        "JavaScript",
+        "HTML",
+        "CSS"
+      ],
+      "link": "https://bloxhell.com/",
+      "image": {
+        "type": "placeholder",
+        "content": "/assets/img/Img_BloxShell.png",
+        "alt": "BloxShell preview"
+      },
+      "year": 2026,
+      "projectType": "landing"
+    }
+  ],
+  "categories": [
+    {
+      "id": "frontend",
+      "name": "Frontend"
+    },
+    {
+      "id": "fullstack",
+      "name": "Fullstack"
+    }
+  ]
+}
