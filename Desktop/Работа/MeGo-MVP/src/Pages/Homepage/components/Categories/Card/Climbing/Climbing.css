@@ -1,0 +1,80 @@
+/* Main container - relative positioning */
+.climbing-root {
+  position: relative;
+  width: var(--gap-260);
+  height: var(--gap-260);
+}
+
+/* Background container with white bg and rounded corners */
+.climbing-container {
+  position: absolute;
+  background-color: var(--color-white);
+  inset: 0;
+  overflow: hidden;
+  border-radius: var(--radius-16);
+}
+
+.climbing-container:hover {
+  border: 1.5px solid var(--color-opacity-dark-70);
+}
+
+.climbing-container:active {
+  border: none;
+  box-shadow: var(--shadow-pressed);
+}
+
+/* Title text */
+.climbing-title {
+  position: absolute;
+  font-family: var(--font-family-base);
+  font-weight: var(--font-weight-semibold);
+  font-size: var(--font-size-5xl);
+  line-height: var(--line-height-none);
+  left: calc(50% - 81px);
+  color: var(--color-neutral-300);
+  top: var(--gap-24);
+  margin: 0;
+  white-space: nowrap;
+}
+
+/* Mountains wrapper - positioned using percentages */
+.climbing-mountains-wrapper {
+  position: absolute;
+  inset: 20.38% -26.39% -18.66% 12.31%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.climbing-mountains-rotated {
+  flex: none;
+  height: 224.241px;
+  width: 271.4px;
+  transform: rotate(6.971deg);
+}
+
+.climbing-mountains {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+/* Character wrapper */
+.climbing-character-wrapper {
+  position: absolute;
+  inset: 51.15% 69.51% -6.01% 5.77%;
+  display: contents;
+}
+
+.climbing-character {
+  position: absolute;
+  inset: 51.15% 69.51% -6.01% 5.77%;
+}
+
+/* Common image styles */
+.climbing-image {
+  display: block;
+  max-width: none;
+  width: 100%;
+  height: 100%;
+}

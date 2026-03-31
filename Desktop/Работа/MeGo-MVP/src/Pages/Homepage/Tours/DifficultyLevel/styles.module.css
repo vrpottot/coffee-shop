@@ -1,0 +1,28 @@
+.root {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 3px 9px;
+  border-radius: 30px;
+
+  font-family: var(--font-family-base);
+  font-size: 10px;
+  font-weight: var(--font-weight-light);
+  line-height: var(--line-height-100);
+  letter-spacing: var(--letter-spacing-none);
+
+  color: var(--color-neutral-300);
+}
+
+.easy {
+  background-color: var(--color-semantic-success)
+}
+
+.medium {
+  background-color: var(--color-semantic-warning); 
+}
+
+.hard {
+  background-color: #FF3A3A; 
+}

@@ -1,0 +1,110 @@
+.map-page {
+  position: relative;
+  width: 1840px;
+  height: 976px;
+  background-color: #FFFFFF;
+  border-radius: 20px;
+  box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.15);
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-family-base);
+  padding: 0;
+}
+
+.map-container {
+  display: flex;
+  width: 1776px;
+  height: 953px;
+  position: relative;
+  gap: 0;
+}
+
+/* Sidebar Filters */
+.sidebar-filters {
+  position: absolute;
+  left: 10px;
+  top: 54px;
+  width: 330px;
+  height: 888px;
+  background-color: var(--color-primary-100);
+  border-radius: var(--radius-20);
+  display: flex;
+  flex-direction: column;
+  z-index: 100;
+  box-shadow: var(--shadow-small);
+  overflow-y: auto;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.sidebar-filters::-webkit-scrollbar {
+  display: none;
+  /* Chrome, Safari and Opera */
+}
+
+.map-sidebar-filter .container-filter {
+  width: 100%;
+  height: auto;
+  padding: 0;
+  background: transparent;
+  border-radius: 0;
+}
+
+.map-sidebar-filter .all-filter {
+  width: 100%;
+  height: auto;
+  background: transparent;
+}
+
+/* Right Sidebar (Cards) */
+.tour-cards-sidebar {
+  position: absolute;
+  right: 12px;
+  top: 53px;
+  width: 332px;
+  height: 888px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 0;
+  z-index: 10;
+  overflow-y: auto;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  background-color: transparent;
+}
+
+.tour-cards-sidebar::-webkit-scrollbar {
+  display: none;
+}
+
+.dropdown-modal.map-mode-modal,
+.dropdown-modal-city.map-mode-modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  bottom: auto;
+  z-index: 1001;
+}
+
+.map-close-btn {
+  position: absolute;
+  top: 20px;
+  right: 40px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1100;
+  border: none;
+  background: transparent;
+
+}
+
+.map-close-btn svg {
+  width: 24px;
+  height: 24px;
+}

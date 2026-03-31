@@ -1,0 +1,67 @@
+/* Main container - relative positioning */
+.sport-root {
+  position: relative;
+  width: var(--gap-260);
+  height: var(--gap-260);
+}
+
+/* Background container with white bg and rounded corners */
+.sport-container {
+  position: absolute;
+  background-color: var(--color-white);
+  inset: 0;
+  overflow: hidden;
+  border-radius: var(--radius-16);
+}
+
+.sport-container:hover {
+  border: 1.5px solid var(--color-opacity-dark-70);
+}
+
+.sport-container:active {
+  border: none;
+  box-shadow: var(--shadow-pressed);
+}
+
+/* Background circle */
+.sport-background {
+  position: absolute;
+  left: 0;
+  width: var(--gap-260);
+  height: var(--gap-260);
+  top: 130px;
+}
+
+/* Title text */
+.sport-title {
+  position: absolute;
+  font-family: var(--font-family-base);
+  font-weight: var(--font-weight-semibold);
+  font-size: var(--font-size-5xl);
+  line-height: var(--line-height-none);
+  left: calc(50% - 73px);
+  color: var(--color-neutral-300);
+  top: var(--gap-24);
+  margin: 0;
+  white-space: nowrap;
+}
+
+/* Character 1 - runner */
+.sport-character1 {
+  position: absolute;
+  inset: 34.62% 43.72% 4.83% 14.23%;
+}
+
+/* Character 2 - runner */
+.sport-character2 {
+  position: absolute;
+  inset: 34.62% 10.27% 1.18% 45.38%;
+}
+
+/* Common image styles */
+.sport-image {
+  display: block;
+  max-width: none;
+  width: 100%;
+  height: 100%;
+}

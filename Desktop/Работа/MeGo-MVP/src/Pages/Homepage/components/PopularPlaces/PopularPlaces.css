@@ -1,0 +1,174 @@
+.popular-places {
+  border-radius: 24px;
+  background: #F5F5F5;
+  box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.16);
+  display: flex;
+  flex-direction: column;
+  width: 426px;
+  max-width: 426px;
+  flex-shrink: 0;
+  padding: 24px;
+  gap: 24px;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+.popular-places__title {
+  font-family: "Onest", sans-serif;
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 100%;
+  letter-spacing: 0;
+  color: rgba(0, 0, 0, 0.8);
+  margin: 0;
+  padding: 0;
+  height: 41px;
+  display: flex;
+  align-items: center;
+}
+
+.popular-places__section {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.popular-places__section:first-of-type {
+  gap: 5px;
+}
+
+.popular-places__section:not(:first-of-type) {
+  gap: 10px;
+}
+
+.popular-places__section-title {
+  font-family: "Onest", sans-serif;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 99.18%;
+  letter-spacing: 0;
+  color: rgba(0, 0, 0, 0.8);
+  margin: 0;
+  padding: 0;
+  margin-top: -3px;
+}
+
+.popular-places__cards {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  width: 100%;
+}
+
+/* Стили для карточек */
+.tour-zone-card,
+.organization-card,
+.popular-place-card {
+  background: #eeeefb;
+  border-radius: 12px;
+  padding: 6px;
+  overflow: hidden;
+  box-sizing: border-box;
+  margin-bottom: 10px !important;
+}
+
+.tour-zone-card {
+  width: 380px;
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.organization-card,
+.popular-place-card {
+  width: 378px;
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.organization-card:hover,
+.popular-place-card:hover,
+.tour-zone-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.1);
+}
+
+/* Добавляем отступы между карточками через margin */
+.popular-places__cards > *:not(:last-child) {
+  margin-bottom: 0;
+}
+
+.popular-places__section:first-of-type
+  .popular-places__cards
+  > *:not(:last-child) {
+  margin-bottom: 0;
+}
+
+.popular-places__section:not(:first-of-type)
+  .popular-places__cards
+  > *:not(:last-child) {
+  margin-bottom: 0;
+}
+
+@media (min-width: 1921px) {
+  .popular-places {
+    width: 426px;
+    max-width: 426px;
+  }
+}
+
+@media (max-width: 1920px) {
+  .popular-places {
+    width: 426px;
+    max-width: 426px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .popular-places {
+    width: 426px;
+    max-width: 426px;
+    padding: 20px 16px;
+    gap: 20px;
+  }
+
+  .popular-places__title {
+    font-size: 28px;
+  }
+
+  .popular-places__section-title {
+    font-size: 24px;
+  }
+
+  .tour-zone-card,
+  .organization-card,
+  .popular-place-card {
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .popular-places {
+    width: 426px;
+    max-width: 426px;
+    padding: 16px 12px;
+    gap: 16px;
+  }
+
+  .popular-places__title {
+    font-size: 24px;
+  }
+
+  .popular-places__section-title {
+    font-size: 20px;
+  }
+
+  .tour-zone-card,
+  .organization-card,
+  .popular-place-card {
+    width: 100%;
+  }
+}

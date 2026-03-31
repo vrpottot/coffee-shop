@@ -1,0 +1,80 @@
+/* Main container - relative positioning */
+.autotour-root {
+  position: relative;
+  width: var(--gap-260);
+  height: var(--gap-260);
+}
+
+/* Background container with white bg and rounded corners */
+.autotour-container {
+  position: absolute;
+  background-color: var(--color-white);
+  inset: 0;
+  overflow: hidden;
+  border-radius: var(--radius-16);
+}
+
+.autotour-container:hover {
+  border: 1.5px solid var(--color-opacity-dark-70);
+}
+
+.autotour-container:active {
+  border: none;
+  box-shadow: var(--shadow-pressed);
+}
+
+/* Title text */
+.autotour-title {
+  position: absolute;
+  font-family: var(--font-family-base);
+  font-weight: var(--font-weight-semibold);
+  font-size: var(--font-size-5xl);
+  line-height: var(--line-height-none);
+  left: calc(50% - 57px);
+  color: var(--color-neutral-300);
+  top: var(--gap-24);
+  margin: 0;
+  white-space: nowrap;
+}
+
+/* Car wrapper */
+.autotour-car {
+  position: absolute;
+  inset: 44.89% 9.72% 6.34% 6.1%;
+}
+
+.autotour-car-wrapper {
+  position: absolute;
+  inset: -0.39% -0.18% -0.39% 0;
+}
+
+/* Floor wrapper */
+.autotour-floor-wrapper {
+  position: absolute;
+  inset: 79.08% 0 0.28% 0;
+  display: contents;
+}
+
+.autotour-floor {
+  position: absolute;
+  inset: 79.08% 0 0.28% 0;
+}
+
+.autotour-floor-inner {
+  position: absolute;
+  inset: 0 0 0 -0.19%;
+}
+
+/* Clouds */
+.autotour-clouds {
+  position: absolute;
+  inset: 0 0.38% 66.35% 0;
+}
+
+/* Common image styles */
+.autotour-image {
+  display: block;
+  max-width: none;
+  width: 100%;
+  height: 100%;
+}

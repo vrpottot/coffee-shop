@@ -1,0 +1,62 @@
+.headerContainer {
+  position: relative;
+  height: 722px;
+  overflow: visible;
+
+  display: flex;
+  flex-direction: column;
+  padding-top: 160px;
+  align-items: center;
+}
+
+.bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat; 
+  background-size: cover;
+  background-position: center top;
+  z-index: -1;
+}
+
+.bg.winter {
+  background-image: url("/assets/HeroBackground/heroImageWinter.jpg");
+}
+
+.bg.spring {
+  background-image: url("/assets/HeroBackground/heroImageSpring.jpeg");
+}
+
+.bg.summer {
+  background-image: url("/assets/HeroBackground/heroImageSummer.jpeg");
+}
+
+.bg.autumn {
+  background-image: url("/assets/HeroBackground/heroImageAutumn.jpeg");
+}
+
+.logoSvg {
+  width: 565px;
+  height: 149px;
+  margin-top: 0px;
+}
+
+.headerTitle {
+  font-family: "Onest", sans-serif;
+  font-weight: 400;
+  font-size: 32px;
+  letter-spacing: 0;
+  line-height: 100%;
+  margin-top: 22px;
+  margin-bottom: 14px;
+}
+
+@media (max-width: 900px) {
+ .logoSvg {
+  width: 565px;
+  height: 118px;
+  margin-top: 0px;
+}
+}

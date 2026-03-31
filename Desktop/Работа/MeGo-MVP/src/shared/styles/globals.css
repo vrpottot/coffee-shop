@@ -1,0 +1,100 @@
+@import './design-tokens.css';
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Thin */
+@font-face {
+    font-family: "Onest";
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+    src: url('../fonts/Onest-SemiBold.ttf') format('truetype');
+}
+
+/* Extra Light */
+@font-face {
+    font-family: "Onest";
+    font-weight: 200;
+    font-style: normal;
+    font-display: swap;
+    src: url('../fonts/Onest-ExtraLight.ttf') format('truetype');
+}
+
+/* Light */
+@font-face {
+    font-family: "Onest";
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+    src: url('../fonts/Onest-Light.ttf') format('truetype');
+}
+
+/* Regular */
+@font-face {
+    font-family: "Onest";
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+    src: url('../fonts/Onest-Regular.ttf') format('truetype');
+}
+
+/* Medium */
+@font-face {
+    font-family: "Onest";
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+    src: url('../fonts/Onest-Medium.ttf') format('truetype');
+}
+
+/* Semi Bold */
+@font-face {
+    font-family: "Onest";
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+    src: url('../fonts/Onest-SemiBold.ttf') format('truetype');
+}
+
+/* Bold */
+@font-face {
+    font-family: "Onest";
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+    src: url('../fonts/Onest-Bold.ttf') format('truetype');
+}
+
+/* Extra Bold */
+@font-face {
+    font-family: "Onest";
+    font-weight: 800;
+    font-style: normal;
+    font-display: swap;
+    src: url('../fonts/Onest-ExtraBold.ttf') format('truetype');
+}
+
+/* Black */
+@font-face {
+    font-family: "Onest";
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+    src: url('../fonts/Onest-Black.ttf') format('truetype');
+}
+
+/* Fallback font */
+@font-face {
+    font-family: "Onest Fallback";
+    font-weight: 400;
+    font-style: normal;
+    src: local('Arial');
+}
+
+body {
+    font-family: 'Onest', 'Onest Fallback', sans-serif;
+}

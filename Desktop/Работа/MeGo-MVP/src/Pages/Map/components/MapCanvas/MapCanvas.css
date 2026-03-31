@@ -1,0 +1,110 @@
+.map-canvas {
+    position: absolute;
+    left: 12px;
+    top: 53px;
+    width: 1754px;
+    height: 890px;
+    background-color: #F5F5F5;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.map-main-wrapper {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.main-map-image {
+    position: absolute;
+    left: 225px;
+    top: 36px;
+    width: 1302px;
+    height: 818px;
+}
+
+.map-pin-wrapper {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 5;
+}
+
+.pin-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.status-dot {
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    width: 9px;
+    height: 9px;
+    border-radius: 900px;
+    z-index: 6;
+}
+
+.status-dot.green {
+    background-color: #73ff78;
+}
+
+.status-dot.orange {
+    background-color: #ff6200;
+}
+
+.map-pin {
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+}
+
+.city-label {
+    font-family: 'Inter', sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 15px;
+    color: #111111;
+    white-space: nowrap;
+    margin-top: 0;
+    position: absolute;
+    top: 24px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.zoom-controls {
+    position: absolute;
+    right: 347px;
+    bottom: 12px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    z-index: 15;
+}
+
+.zoom-btn {
+    width: 40px;
+    height: 40px;
+    background-color: #8F8F8F;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.2s;
+    padding: 12px;
+}
+
+.zoom-btn:hover {
+    background-color: #7A7A7A;
+}
+
+.zoom-btn img {
+    width: 16px;
+    height: 16px;
+}

@@ -1,0 +1,87 @@
+.root {
+  position: relative;
+  display: inline-block;
+}
+
+.trigger {
+  box-sizing: border-box;
+
+  display: flex;
+  align-items: center;
+  gap: 4px;
+
+  width: 178px;
+  height: 16px;
+
+  background: transparent;
+  border: none;
+  cursor: pointer;
+
+  font-family: "Onest", sans-serif;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 100%;
+  height: 16px;
+  letter-spacing: none;
+}
+
+.arrow {
+  width: 16px;
+  height: 16px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.2s ease;
+}
+
+.open {
+  transform: rotate(180deg);
+}
+
+.dropdown {
+  position: absolute;
+  top: calc(100% + 6px);
+ left: 0;
+
+  width: 178px;
+  height: 181px;
+
+  padding: 12px;
+  gap: 4px;
+  display: flex;
+  flex-direction: column;
+
+  background: var(--color-primary-100);
+  border-radius: 8px;
+  box-shadow: var(--shadow-small);
+}
+
+.option {
+  width: auto;
+  height: 19px;
+  padding: 2px 8px;
+  border-radius: 4px;
+  border: none;
+  background: transparent;
+  text-align: left;
+  cursor: pointer;
+
+  font-size: 12px;
+  font-family: "Onest", sans-serif;
+  font-weight: 500;
+  line-height: 100%;
+  letter-spacing: none;
+}
+
+.option:hover {
+  background: var(--color-primary-200);
+}
+
+.option.active {
+  background: var(--color-primary-200);
+}
+
+.dropdown,
+.option {
+  box-sizing: content-box;
+}

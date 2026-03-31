@@ -1,0 +1,60 @@
+.results-sort {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1507px;
+  width: 100%;
+  padding: 20px 0 5px 30px;
+}
+
+.results-count{
+  margin-left: 465px;
+}
+
+.results-count p {
+  margin: 0;
+  color: var(--Black-200, #8f8f8f);
+
+  /* Text/cuption */
+  font-family: "Onest";
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.sort{
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.sort p{
+  color: var(--Black-200, #8f8f8f);
+  font-family: "Onest";
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.results-count-number {
+  color: var(--Black-300, #111);
+
+  /* Text/cuption */
+  font-family: "Onest";
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.filter-container {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  align-content: flex-start;
+  justify-content: center;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 10px;
+}

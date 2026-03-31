@@ -1,0 +1,119 @@
+/* Main container - relative positioning */
+.tours-root {
+  position: relative;
+  width: var(--gap-260);
+  height: var(--gap-260);
+}
+
+/* Background container with white bg and rounded corners */
+.tours-container {
+  position: absolute;
+  background-color: var(--color-white);
+  inset: 0;
+  overflow: hidden;
+  border-radius: var(--radius-16);
+}
+
+.tours-container:hover {
+  border: 1.5px solid var(--color-opacity-dark-70);
+}
+
+.tours-container:active {
+  border: none;
+  box-shadow: var(--shadow-pressed);
+}
+
+/* Background circle - positioned at center/bottom */
+.tours-background-circle {
+  position: absolute;
+  height: 273px;
+  left: 50%;
+  top: 141px;
+  transform: translateX(-50%);
+  width: 272px;
+}
+
+/* Title text */
+.tours-title {
+  position: absolute;
+  font-family: var(--font-family-base);
+  font-weight: var(--font-weight-semibold);
+  font-size: var(--font-size-5xl);
+  line-height: var(--line-height-none);
+  left: calc(50% - 63px);
+  color: var(--color-neutral-300);
+  top: var(--gap-24);
+  margin: 0;
+  white-space: nowrap;
+}
+
+/* Decoration element - circular background */
+.tours-decoration {
+  position: absolute;
+  left: 15px;
+  width: 151px;
+  height: 151px;
+  top: 138px;
+}
+
+/* Characters container */
+.tours-characters {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  overflow: hidden;
+  width: var(--gap-260);
+  height: var(--gap-260);
+}
+
+/* Character 5 - leftmost with flag */
+.tours-character5 {
+  position: absolute;
+  inset: 49.84% 4.62% 1.39% 77.95%;
+}
+
+.tours-character5-wrapper {
+  position: absolute;
+  inset: -0.39% -1.1%;
+}
+
+/* Character 3 - second from left */
+.tours-character3 {
+  position: absolute;
+  inset: 46.75% 21.92% 1.38% 48.76%;
+}
+
+.tours-character3-wrapper {
+  position: absolute;
+  inset: -0.37% -0.66%;
+}
+
+/* Character 2 - middle */
+.tours-character2 {
+  position: absolute;
+  inset: 49.6% 51.65% 1.38% 35.59%;
+}
+
+.tours-character2-wrapper {
+  position: absolute;
+  inset: -0.39% -1.51%;
+}
+
+/* Character 1 - rightmost tour guide */
+.tours-character1 {
+  position: absolute;
+  inset: 35.77% 68.5% 1.39% 4.04%;
+}
+
+.tours-character1-wrapper {
+  position: absolute;
+  inset: -0.61% -0.7% -0.31% -0.7%;
+}
+
+/* Common image styles */
+.tours-image {
+  display: block;
+  max-width: none;
+  width: 100%;
+  height: 100%;
+}

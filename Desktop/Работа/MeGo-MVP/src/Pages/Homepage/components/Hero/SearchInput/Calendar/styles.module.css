@@ -1,0 +1,125 @@
+.calendar {
+  position: absolute;
+  top: calc(100% + 8px);
+  left: 0;
+  width: 254px;
+  padding: 10px;
+  border-radius: 6.47px;
+  background: var(--color-neutral-white);
+  box-shadow: var(--shadow-small);
+  z-index: 1000;
+}
+
+.calendar::before {
+  content: '';
+  position: absolute;
+  top: -24px;
+  left: 13px;
+
+  width: 31px;
+  height: 25px;
+
+  background: var(--color-neutral-white);
+  clip-path: polygon(50% 0, 0 100%, 100% 100%);
+  box-shadow: 4px 0px 4px var(--shadow-small);
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 16px;
+}
+
+.title {
+  font: var(--typography-label-large);
+  text-align: center;
+}
+
+.navButton {
+  all: unset;
+  width: 16px;
+  height: 16px;
+  border-radius: 6.47px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.weekdays {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  margin-bottom: 12px;
+}
+
+.weekday {
+  font: var(--typography-body-caption);
+  text-align: center;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.days {
+  display: grid;
+  font: var(--typography-label);
+  text-align: center;
+  vertical-align: middle;
+  grid-template-columns: repeat(7, 32px);
+  gap: 2px;
+  justify-content: flex-start;
+  border: 1.29px solid transparent;
+  box-sizing: border-box;
+}
+
+.emptyDay {
+  pointer-events: none;
+}
+
+.day {
+  width: 32px;
+  height: 32px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 10.36px;
+  font-weight: 400;
+
+  cursor: pointer;
+
+  border-radius: 50%;
+  border: 1.29px solid transparent;
+  box-sizing: border-box;
+  position: relative;
+  z-index: 3;
+}
+
+.day:hover:not(.selectedDay):not(.rangeDay){
+  border-color: var(--color-primary-200);
+}
+
+.selectedDay {
+  background: var(--color-primary-300);
+  color: var(--color-secondary-300);
+  border-radius: 50%;
+}
+
+.rangeDay {
+  background: var(--color-primary-100);
+  border-radius: 50%;
+}
+
+.rangePreview {
+  position: absolute;
+  border: 1.29px dashed #8f8f8f;
+  border-radius: 32.38px;
+  pointer-events: none;
+
+  z-index: 1;
+}
